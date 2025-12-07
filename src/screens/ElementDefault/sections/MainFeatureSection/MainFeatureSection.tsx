@@ -19,9 +19,9 @@ export const MainFeatureSection = (): JSX.Element => {
                 Choose Us
               </h2>
 
-              <div className="flex flex-col gap-4 sm:gap-6 text-white">
+              <div className="flex flex-col gap-4 sm:gap-6">
                 <p 
-                  className="text-sm sm:text-base md:text-xl leading-relaxed"
+                  className="text-sm sm:text-base md:text-xl leading-relaxed text-white/90"
                   style={{ fontFamily: "'Satoshi', Helvetica" }}
                 >
                   Most agencies offer pieces of the puzzle. We bring the complete system:
@@ -29,7 +29,7 @@ export const MainFeatureSection = (): JSX.Element => {
                 </p>
 
                 <p 
-                  className="text-sm sm:text-base md:text-xl leading-relaxed"
+                  className="text-sm sm:text-base md:text-xl leading-relaxed text-white/90"
                   style={{ fontFamily: "'Satoshi', Helvetica" }}
                 >
                   One partner. One vision. Measurable growth. We combine brand storytelling
