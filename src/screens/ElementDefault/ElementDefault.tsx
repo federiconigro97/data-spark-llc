@@ -1,4 +1,3 @@
-import { MessageCircleIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -439,45 +438,7 @@ export const ElementDefault = (): JSX.Element => {
         </div>
       </div>
 
-      <div className="absolute w-full top-[9979px] left-0 h-px flex items-end">
-        <div className="inline-flex mb-[9189.3px] w-[171px] h-[53px] ml-[1239.8px] relative max-w-[400px] items-center">
-          <div className="flex flex-col w-2 h-2 items-start absolute -top-3 right-0.5">
-            <div className="flex flex-col w-2 h-2 items-center justify-center">
-              <img
-                className="relative w-2 h-2"
-                alt="Component"
-                src="/component-1-6.svg"
-              />
-            </div>
-          </div>
 
-          <Card className="inline-flex flex-col items-start p-4 bg-federiconigrowixstudiocomwhite rounded-[5px] border border-solid border-[#e9e9e9]">
-            <CardContent className="p-0">
-              <div className="absolute h-[37.74%] top-[98.11%] right-[11px] w-5 border-[10px] border-solid border-[#e9e9e9]" />
-
-              <p className="flex items-center justify-center w-fit mt-[-1.00px] font-federiconigro-wixstudio-com-roboto-regular font-[number:var(--federiconigro-wixstudio-com-roboto-regular-font-weight)] text-federiconigrowixstudiocomshark text-[length:var(--federiconigro-wixstudio-com-roboto-regular-font-size)] tracking-[var(--federiconigro-wixstudio-com-roboto-regular-letter-spacing)] leading-[var(--federiconigro-wixstudio-com-roboto-regular-line-height)] whitespace-nowrap [font-style:var(--federiconigro-wixstudio-com-roboto-regular-font-style)]">
-                How can we help you?
-              </p>
-
-              <div className="absolute h-[33.96%] top-[98.11%] right-3 w-[18px] border-[9px] border-solid border-white" />
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-
-      <Button className="flex w-[60px] h-[60px] items-center justify-center fixed left-[1350px] bottom-[30px] bg-federiconigrowixstudiocommountain-meadow hover:bg-federiconigrowixstudiocommountain-meadow/90 rounded-[30px] shadow-[0px_1px_2px_#00000026] p-0">
-        <div className="inline-flex flex-col items-start">
-          <MessageCircleIcon className="w-[34px] h-[34px] text-federiconigrowixstudiocomwhite" />
-        </div>
-
-        <div className="inline-flex items-center justify-center absolute top-[-5px] right-[-5px]">
-          <div className="flex w-5 h-5 items-center justify-center bg-federiconigrowixstudiocomradical-red rounded-[10px]">
-            <span className="flex items-center justify-center w-fit font-federiconigro-wixstudio-com-roboto-medium font-[number:var(--federiconigro-wixstudio-com-roboto-medium-font-weight)] text-federiconigrowixstudiocomwhite text-[length:var(--federiconigro-wixstudio-com-roboto-medium-font-size)] text-center tracking-[var(--federiconigro-wixstudio-com-roboto-medium-letter-spacing)] leading-[var(--federiconigro-wixstudio-com-roboto-medium-line-height)] whitespace-nowrap [font-style:var(--federiconigro-wixstudio-com-roboto-medium-font-style)]">
-              1
-            </span>
-          </div>
-        </div>
-      </Button>
 
     </div>
   );
