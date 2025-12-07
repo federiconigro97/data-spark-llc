@@ -1,6 +1,4 @@
-import { PlayIcon } from "lucide-react";
 import React from "react";
-import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 
 export const MainFeatureSection = (): JSX.Element => {
@@ -36,24 +34,13 @@ export const MainFeatureSection = (): JSX.Element => {
             </CardContent>
           </Card>
 
-          <div className="rounded-[4.5px] overflow-hidden relative">
+          <div className="rounded-xl overflow-hidden">
             <div className="relative w-full h-[371px] overflow-hidden">
-              <div className="relative -top-3 -left-3 w-[calc(100%+12px)]">
-                <div className="relative w-full h-[383px]">
-                  <img
-                    className="w-full h-full object-cover"
-                    alt="Container"
-                    src="/container.svg"
-                  />
-
-                  <Button
-                    size="icon"
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white hover:bg-white/90 rounded-full opacity-90"
-                  >
-                    <PlayIcon className="w-[12.29px] h-[20.84px] fill-current text-black" />
-                  </Button>
-                </div>
-              </div>
+              <img
+                className="w-full h-full object-cover rounded-xl"
+                alt="Team working"
+                src="/container.svg"
+              />
             </div>
           </div>
         </div>

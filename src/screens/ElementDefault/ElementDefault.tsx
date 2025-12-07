@@ -34,187 +34,16 @@ import { ServicesSection } from "./sections/ServicesSection";
 import { StatsSection } from "./sections/StatsSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
 
-const logoData = [
-  {
-    width: "w-[78px]",
-    marginLeft: "ml-[18.3px]",
-    src: "/c837a6-a7345f501dc3422d945379f448084e05-mv2-jpg.png",
-  },
-  {
-    width: "w-[97px]",
-    marginLeft: "ml-[40.0px]",
-    src: "/c837a6-1f447c24465a4ad0bafacb8d8c9e9674-mv2-jpg.png",
-  },
-  {
-    width: "w-[104px]",
-    marginLeft: "ml-[39.2px]",
-    src: "/c837a6-a64e7be0a70c44bbbfdf0a7f4cdb71ce-mv2-jpg.png",
-  },
-  {
-    width: "w-[103px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-dd420a52f8a248feb220d6eb0abe7411-mv2-jpg.png",
-  },
-  {
-    width: "w-[125px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-2e6c89fafc834169a3c46e7f065e2892-mv2-png.png",
-  },
-  {
-    width: "w-[205px]",
-    marginLeft: "ml-[39.2px]",
-    src: "/72bf97-87d83f2e091d472f8fdc153f27f5925b-mv2-png.png",
-  },
-  {
-    width: "w-[38px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-ea7526912b134b5d92e9aa197b254059-mv2-png.png",
-  },
-  {
-    width: "w-[75px]",
-    marginLeft: "ml-[40.0px]",
-    src: "/72bf97-d2015d5c3efe4e76940b7b3bea0177a5-mv2-png.png",
-  },
-  {
-    width: "w-[74px]",
-    marginLeft: "ml-[39.2px]",
-    src: "/72bf97-e1f6332232cc48159216cf0e68db15b5-mv2-png.png",
-  },
-  {
-    width: "w-[78px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-a7345f501dc3422d945379f448084e05-mv2-jpg-1.png",
-  },
-  {
-    width: "w-[97px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-1f447c24465a4ad0bafacb8d8c9e9674-mv2-jpg-1.png",
-  },
-  {
-    width: "w-[104px]",
-    marginLeft: "ml-[39.2px]",
-    src: "/c837a6-a64e7be0a70c44bbbfdf0a7f4cdb71ce-mv2-jpg-1.png",
-  },
-  {
-    width: "w-[103px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-dd420a52f8a248feb220d6eb0abe7411-mv2-jpg-1.png",
-  },
-  {
-    width: "w-[125px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-2e6c89fafc834169a3c46e7f065e2892-mv2-png-1.png",
-  },
-  {
-    width: "w-[205px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-87d83f2e091d472f8fdc153f27f5925b-mv2-png-1.png",
-  },
-  {
-    width: "w-[38px]",
-    marginLeft: "ml-[40.0px]",
-    src: "/72bf97-ea7526912b134b5d92e9aa197b254059-mv2-png-1.png",
-  },
-  {
-    width: "w-[75px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-d2015d5c3efe4e76940b7b3bea0177a5-mv2-png-1.png",
-  },
-  {
-    width: "w-[74px]",
-    marginLeft: "ml-[39.2px]",
-    src: "/72bf97-e1f6332232cc48159216cf0e68db15b5-mv2-png-1.png",
-  },
-  {
-    width: "w-[78px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-a7345f501dc3422d945379f448084e05-mv2-jpg-2.png",
-  },
-  {
-    width: "w-[97px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-1f447c24465a4ad0bafacb8d8c9e9674-mv2-jpg-2.png",
-  },
-  {
-    width: "w-[104px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-a64e7be0a70c44bbbfdf0a7f4cdb71ce-mv2-jpg-2.png",
-  },
-  {
-    width: "w-[103px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-dd420a52f8a248feb220d6eb0abe7411-mv2-jpg-2.png",
-  },
-  {
-    width: "w-[125px]",
-    marginLeft: "ml-[39.2px]",
-    src: "/72bf97-2e6c89fafc834169a3c46e7f065e2892-mv2-png-2.png",
-  },
-  {
-    width: "w-[205px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-87d83f2e091d472f8fdc153f27f5925b-mv2-png-2.png",
-  },
-  {
-    width: "w-[38px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-ea7526912b134b5d92e9aa197b254059-mv2-png-2.png",
-  },
-  {
-    width: "w-[75px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-d2015d5c3efe4e76940b7b3bea0177a5-mv2-png-2.png",
-  },
-  {
-    width: "w-[74px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-e1f6332232cc48159216cf0e68db15b5-mv2-png-2.png",
-  },
-  {
-    width: "w-[78px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-a7345f501dc3422d945379f448084e05-mv2-jpg-3.png",
-  },
-  {
-    width: "w-[97px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-1f447c24465a4ad0bafacb8d8c9e9674-mv2-jpg-3.png",
-  },
-  {
-    width: "w-[104px]",
-    marginLeft: "ml-[39.2px]",
-    src: "/c837a6-a64e7be0a70c44bbbfdf0a7f4cdb71ce-mv2-jpg-3.png",
-  },
-  {
-    width: "w-[103px]",
-    marginLeft: "ml-10",
-    src: "/c837a6-dd420a52f8a248feb220d6eb0abe7411-mv2-jpg-3.png",
-  },
-  {
-    width: "w-[125px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-2e6c89fafc834169a3c46e7f065e2892-mv2-png-3.png",
-  },
-  {
-    width: "w-[205px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-87d83f2e091d472f8fdc153f27f5925b-mv2-png-3.png",
-  },
-  {
-    width: "w-[38px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-ea7526912b134b5d92e9aa197b254059-mv2-png-3.png",
-  },
-  {
-    width: "w-[75px]",
-    marginLeft: "ml-10",
-    src: "/72bf97-d2015d5c3efe4e76940b7b3bea0177a5-mv2-png-3.png",
-  },
-  {
-    width: "w-[74px]",
-    marginLeft: "ml-[39.2px]",
-    src: "/72bf97-e1f6332232cc48159216cf0e68db15b5-mv2-png-3.png",
-  },
+const logoImages = [
+  "/c837a6-a7345f501dc3422d945379f448084e05-mv2-jpg.png",
+  "/c837a6-1f447c24465a4ad0bafacb8d8c9e9674-mv2-jpg.png",
+  "/c837a6-a64e7be0a70c44bbbfdf0a7f4cdb71ce-mv2-jpg.png",
+  "/c837a6-dd420a52f8a248feb220d6eb0abe7411-mv2-jpg.png",
+  "/72bf97-2e6c89fafc834169a3c46e7f065e2892-mv2-png.png",
+  "/72bf97-87d83f2e091d472f8fdc153f27f5925b-mv2-png.png",
+  "/72bf97-ea7526912b134b5d92e9aa197b254059-mv2-png.png",
+  "/72bf97-d2015d5c3efe4e76940b7b3bea0177a5-mv2-png.png",
+  "/72bf97-e1f6332232cc48159216cf0e68db15b5-mv2-png.png",
 ];
 
 export const ElementDefault = (): JSX.Element => {
@@ -242,25 +71,11 @@ export const ElementDefault = (): JSX.Element => {
             <MainSectionWrapper />
             <ImageGallerySection />
 
-            <section className="relative w-full bg-federiconigrowixstudiocomwild-sand px-[46.08px]">
-              <div className="flex w-full items-start">
-                <div className="flex flex-col w-[673.92px] items-center pl-[56.76px] pr-[166.44px] pt-[261.04px] pb-[271.07px]">
-                  <div className="flex flex-col w-[450.72px] items-start gap-[0.01px]">
-                    <div className="flex flex-col w-full items-start pt-0 pb-3 px-0">
-                      <div className="pt-0 pb-[0.59px] px-0 flex flex-col items-start w-full">
-                        <h2 className="flex items-center justify-center w-full mt-[-1.00px] [font-family:'Satoshi-Medium',Helvetica] font-medium text-[#191818] text-[40.5px] tracking-[0] leading-[48.6px]">
-                          Results you can expect
-                        </h2>
-                      </div>
-                    </div>
-
-                    <div className="flex flex-col w-[131.33px] items-center pl-[14.52px] pr-[70.89px] pt-[12.06px] pb-[12.07px] relative">
-                      <div className="absolute w-full h-full top-0 left-0 bg-federiconigrowixstudiocomcasablanca rounded-[1123.88px]" />
-                      <div className="relative w-[45.92px] h-[45.92px] bg-[url(/component-1.svg)] bg-[100%_100%]" />
-                    </div>
-                  </div>
-                </div>
-
+            <section className="relative w-full bg-federiconigrowixstudiocomwild-sand py-20 px-12">
+              <div className="max-w-[1200px] mx-auto">
+                <h2 className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-[#191818] text-[40.5px] tracking-[0] leading-[48.6px] text-center mb-12">
+                  Results you can expect
+                </h2>
                 <MainWrapperSection />
               </div>
             </section>
@@ -292,44 +107,29 @@ export const ElementDefault = (): JSX.Element => {
               </div>
             </section>
 
-            <section className="flex flex-col items-center px-0 py-[48.62px] relative w-full bg-federiconigrowixstudiocomgallery">
-              <div className="flex flex-col w-full items-start justify-center">
-                <div className="relative w-full">
-                  <div className="flex flex-col w-full items-start justify-center">
-                    <div className="relative w-full overflow-hidden">
-                      <div className="flex flex-col w-full items-start">
-                        <div className="relative w-full overflow-hidden overflow-x-scroll">
-                          <div className="relative w-full flex">
-                            {logoData.map((logo, index) => (
-                              <div
-                                key={`logo-${index}`}
-                                className={`${logo.width} ${logo.marginLeft} flex mt-5 h-[21px] flex-col items-start`}
-                              >
-                                <div className="flex flex-col items-start w-full">
-                                  <div
-                                    className={`relative ${logo.width} h-[21px] bg-cover bg-[50%_50%]`}
-                                    style={{
-                                      backgroundImage: `url(${logo.src})`,
-                                    }}
-                                  />
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <section className="py-12 w-full bg-federiconigrowixstudiocomgallery overflow-hidden">
+              <div className="flex items-center justify-center gap-12 flex-wrap px-12">
+                {logoImages.map((src, index) => (
+                  <div
+                    key={`logo-${index}`}
+                    className="flex-shrink-0 h-8 flex items-center"
+                  >
+                    <img
+                      src={src}
+                      alt={`Partner logo ${index + 1}`}
+                      className="h-full w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
                   </div>
-                </div>
+                ))}
               </div>
             </section>
 
             <MainFeatureSection />
 
-            <section className="flex flex-col items-start gap-[0.01px] px-[46.08px] py-[87px] relative w-full bg-federiconigrowixstudiocomwild-sand">
-              <HeroSection />
-              <div className="flex flex-col items-start pt-[33.78px] pb-[33.58px] px-0 w-full">
-                <div className="flex-col w-full flex items-start">
+            <section className="py-20 px-12 w-full bg-federiconigrowixstudiocomwild-sand">
+              <div className="max-w-[1200px] mx-auto">
+                <HeroSection />
+                <div className="mt-12 w-full">
                   <ListItem2Section />
                   <ListItem3Section />
                   <ListItem4Section />
@@ -339,47 +139,41 @@ export const ElementDefault = (): JSX.Element => {
               </div>
             </section>
 
-            <section className="flex flex-col items-start relative w-full">
-              <div className="flex flex-col items-center pl-[47.92px] pr-[45.45px] pt-[57.15px] pb-[56.88px] w-full">
-                <div className="flex flex-col w-[1346.63px] items-start">
-                  <div className="flex justify-center gap-6 w-full items-start">
-                    <ListItem7Section />
-                    <ListItem8Section />
-                    <ListItem9Section />
-                    <ListItem10Section />
-                  </div>
+            <section className="py-16 px-12 w-full bg-white">
+              <div className="max-w-[1200px] mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <ListItem7Section />
+                  <ListItem8Section />
+                  <ListItem9Section />
+                  <ListItem10Section />
                 </div>
               </div>
             </section>
 
             <AdditionalInfoSection />
 
-            <section className="flex flex-col items-start relative w-full bg-federiconigrowixstudiocomwild-sand">
-              <div className="flex items-start justify-center px-0 py-[46.08px] w-full">
-                <StatsSection />
-                <div className="flex flex-col w-[720px] items-center pt-[83.99px] pb-[84px] px-0">
-                  <div className="flex flex-col w-[666px] items-start">
+            <section className="py-20 px-12 w-full bg-federiconigrowixstudiocomwild-sand">
+              <div className="max-w-[1200px] mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                  <StatsSection />
+                  <div className="w-full">
                     <Card className="w-full bg-federiconigrowixstudiocomgallery rounded-2xl border-0">
-                      <CardContent className="p-6">
-                        <div className="flex flex-col items-start gap-6 w-full">
-                          <div className="flex flex-col items-start w-full">
-                            <h2 className="flex items-center justify-center w-full mt-[-1.00px] font-federiconigro-wixstudio-com-semantic-heading-1 font-[number:var(--federiconigro-wixstudio-com-semantic-heading-1-font-weight)] text-federiconigrowixstudiocomcod-gray text-[length:var(--federiconigro-wixstudio-com-semantic-heading-1-font-size)] tracking-[var(--federiconigro-wixstudio-com-semantic-heading-1-letter-spacing)] leading-[var(--federiconigro-wixstudio-com-semantic-heading-1-line-height)] [font-style:var(--federiconigro-wixstudio-com-semantic-heading-1-font-style)]">
-                              Contact us
-                            </h2>
-                          </div>
+                      <CardContent className="p-8">
+                        <div className="flex flex-col gap-6 w-full">
+                          <h2 className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomcod-gray text-3xl">
+                            Contact us
+                          </h2>
 
                           <AboutUsSection />
                           <ServicesSection />
                           <TestimonialsSection />
                           <PortfolioSection />
 
-                          <div className="flex flex-col items-start pl-[321px] pr-0 py-0 w-full">
-                            <Button className="w-full bg-[#3d3b8e] hover:bg-[#3d3b8e]/90 text-federiconigrowixstudiocomwild-sand rounded pt-2.5 pb-[11px] px-[14.84px]">
-                              <span className="[font-family:'Satoshi-Regular',Helvetica] font-normal text-base text-center leading-[19.2px] whitespace-nowrap">
-                                Submit
-                              </span>
-                            </Button>
-                          </div>
+                          <Button className="w-full bg-[#3d3b8e] hover:bg-[#3d3b8e]/90 text-white rounded-lg py-3">
+                            <span className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-base">
+                              Submit
+                            </span>
+                          </Button>
                         </div>
                       </CardContent>
                     </Card>
@@ -388,49 +182,31 @@ export const ElementDefault = (): JSX.Element => {
               </div>
             </section>
 
-            <footer className="flex flex-col h-[450px] items-start justify-center relative w-full bg-federiconigrowixstudiocomgallery">
-              <div className="w-full h-[450px]">
-                <div className="flex flex-col items-start absolute top-[45px] left-[45px]">
-                  <div className="flex flex-col items-start w-full">
-                    <div className="flex flex-col w-[79.25px] h-[60.47px] items-start pt-0 pb-2 px-0">
-                      <div className="w-[79.25px] h-[52.47px]">
-                        <div className="w-full h-full flex items-center justify-center">
-                          <div className="mt-0 h-[52.47px] w-[79.25px] relative">
-                            <img
-                              className="absolute w-[80.78%] h-[112.35%] top-[-6.17%] left-[9.40%]"
-                              alt="Group"
-                              src="/group.png"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <footer className="w-full bg-federiconigrowixstudiocomgallery py-12 px-12">
+              <div className="max-w-[1200px] mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                  <div className="flex flex-col items-start">
+                    <img
+                      className="w-16 h-auto mb-4"
+                      alt="Data Spark Logo"
+                      src="/group.png"
+                    />
+                    <h3 className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomcod-gray text-2xl">
+                      Data Spark LLC
+                    </h3>
+                  </div>
 
-                    <div className="pt-0 pb-[0.8px] px-0 -mt-px flex flex-col items-start w-full">
-                      <h3 className="flex items-center justify-center w-full mt-[-1.00px] [font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomcod-gray text-[31.5px] tracking-[0] leading-[37.8px]">
-                        Data Spark LLC
-                      </h3>
-                    </div>
+                  <div className="flex flex-col items-start">
+                    <p className="[font-family:'Satoshi-Regular',Helvetica] font-normal text-federiconigrowixstudiocomcod-gray text-lg leading-relaxed">
+                      Our mission is to help founders turn their origin stories into engines of sustainable growth. We believe every brand has a spark—our job is to ignite it and keep it burning bright.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col items-start">
+                    <ContactSection />
                   </div>
                 </div>
 
-                <div className="flex flex-col items-start absolute top-[45px] left-[730px]">
-                  <div className="flex flex-col w-[559.7px] items-start">
-                    <div className="flex flex-col items-start pt-0 pb-[0.6px] px-0 w-full">
-                      <p className="flex items-center justify-center w-full mt-[-1.00px] [font-family:'Satoshi-Regular',Helvetica] font-normal text-federiconigrowixstudiocomcod-gray text-[20.3px] tracking-[0] leading-[24.3px]">
-                        Our mission is to help founders turn their origin
-                        stories into
-                        <br />
-                        engines of sustainable growth. We believe every brand
-                        has a<br />
-                        spark—our job is to ignite it and keep it burning
-                        bright.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <ContactSection />
                 <NewsletterSection />
               </div>
             </footer>

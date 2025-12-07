@@ -10,55 +10,51 @@ const faqData = [
   {
     id: "item-1",
     question: "What makes DataSpark different from other agencies?",
+    answer: "We combine brand storytelling with data-driven optimization to create sustainable revenue machines that scale without burning cash on ads or constant discounts."
   },
   {
     id: "item-2",
     question: "Do I need a big audience list to benefit?",
+    answer: "No, we work with brands at all stages. Our strategies are designed to grow your audience while maximizing the value of your existing customers."
   },
   {
     id: "item-3",
     question: "How soon can I see results?",
+    answer: "Most clients see measurable improvements within 30-60 days. Our data-driven approach allows us to identify quick wins while building long-term growth systems."
   },
   {
     id: "item-4",
     question: "Is this only for fashion/lifestyle brands?",
+    answer: "While we have deep expertise in fashion and lifestyle, our growth systems work for any DTC brand looking to scale profitably."
   },
 ];
 
 export const AdditionalInfoSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-start relative w-full bg-federiconigrowixstudiocomwild-sand">
-      <div className="flex flex-col w-full items-start gap-[0.01px] p-[45px]">
-        <div className="flex flex-col items-start pt-0 pb-[9.14px] px-0 w-full">
-          <div className="flex flex-col max-w-[690.03px] items-start">
-            <div className="pt-0 pb-[0.59px] px-0 flex flex-col items-start w-full">
-              <h2 className="flex items-center justify-center w-full mt-[-1.00px] [font-family:'Satoshi-Medium',Helvetica] font-medium text-[#191818] text-[40.5px] tracking-[0] leading-[48.6px]">
-                Frequently Asked Questions
-              </h2>
-            </div>
-          </div>
-        </div>
+    <section className="w-full bg-federiconigrowixstudiocomwild-sand py-16 px-12">
+      <div className="max-w-[900px]">
+        <h2 className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-[#191818] text-[40.5px] tracking-[0] leading-[48.6px] text-left mb-10">
+          Frequently Asked Questions
+        </h2>
 
-        <div className="flex flex-col items-start pt-[38.48px] pb-[38.49px] px-0 w-full">
-          <Accordion type="single" collapsible className="w-full">
-            {faqData.map((faq) => (
-              <AccordionItem
-                key={faq.id}
-                value={faq.id}
-                className="border-b-2 border-[#ececec] bg-federiconigrowixstudiocomwhite"
-              >
-                <AccordionTrigger className="flex items-center px-0 py-1.5 w-full bg-[#f5f4f5] hover:no-underline [&[data-state=open]>svg]:rotate-180">
-                  <div className="flex flex-col items-start flex-1">
-                    <span className="flex items-center justify-center w-full mt-[-1.00px] font-federiconigro-wixstudio-com-switzer-regular font-[number:var(--federiconigro-wixstudio-com-switzer-regular-font-weight)] text-federiconigrowixstudiocomblack text-[length:var(--federiconigro-wixstudio-com-switzer-regular-font-size)] tracking-[var(--federiconigro-wixstudio-com-switzer-regular-letter-spacing)] leading-[var(--federiconigro-wixstudio-com-switzer-regular-line-height)] [font-style:var(--federiconigro-wixstudio-com-switzer-regular-font-style)]">
-                      {faq.question}
-                    </span>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent></AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
+        <Accordion type="single" collapsible className="w-full">
+          {faqData.map((faq) => (
+            <AccordionItem
+              key={faq.id}
+              value={faq.id}
+              className="border-b border-[#ececec]"
+            >
+              <AccordionTrigger className="flex items-center py-5 w-full hover:no-underline text-left">
+                <span className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomcod-gray text-lg text-left">
+                  {faq.question}
+                </span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-5 text-federiconigrowixstudiocomcod-gray text-base">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
     </section>
   );
