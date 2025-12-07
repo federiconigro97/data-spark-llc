@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const metricsData = [
   {
@@ -28,32 +28,50 @@ const metricsData = [
 ];
 
 export const MainWrapperSection = (): JSX.Element => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(element);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(element);
+    return () => observer.unobserve(element);
+  }, []);
+
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
+    <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
       {metricsData.map((metric, index) => (
         <div
           key={index}
-          className={`group relative flex flex-col items-center justify-center p-6 md:p-8 rounded-2xl bg-gradient-to-br ${metric.gradient} text-white min-h-[160px] md:min-h-[200px] overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl cursor-default`}
+          className={`group relative flex flex-col items-center justify-center p-6 md:p-8 rounded-2xl bg-gradient-to-br ${metric.gradient} text-white min-h-[160px] md:min-h-[200px] overflow-hidden hover:scale-[1.02] hover:shadow-2xl cursor-default`}
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
+            transition: 'opacity 600ms ease-out, transform 600ms ease-out',
+            transitionDelay: `${index * 100}ms`
+          }}
         >
           <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-500" />
           <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
           
-          <span 
-            className="relative text-xs md:text-sm opacity-90 mb-1 md:mb-2 tracking-wide uppercase"
-            style={{ fontFamily: "'Satoshi', Helvetica" }}
-          >
+          <span className="relative text-caption opacity-90 mb-1 md:mb-2 tracking-wide uppercase">
             {metric.description}
           </span>
-          <span 
-            className="relative text-3xl md:text-5xl font-bold mb-1 md:mb-2 tracking-tight"
-            style={{ fontFamily: "'Satoshi', Helvetica" }}
-          >
+          <span className="relative text-3xl md:text-5xl font-bold mb-1 md:mb-2 tracking-tight">
             {metric.value}
           </span>
-          <span 
-            className="relative text-sm md:text-base font-medium opacity-90"
-            style={{ fontFamily: "'Satoshi', Helvetica" }}
-          >
+          <span className="relative text-body-sm font-medium opacity-90">
             {metric.label}
           </span>
         </div>
