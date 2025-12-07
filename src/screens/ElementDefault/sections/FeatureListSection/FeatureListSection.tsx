@@ -32,16 +32,10 @@ export const FeatureListSection = (): JSX.Element => {
         >
           <CardContent className="flex flex-col p-0">
             <div className="mb-6">
-              <h3 
-                className="font-bold text-[#191818] text-2xl md:text-[28px] leading-tight mb-4 text-center"
-                style={{ fontFamily: "'Satoshi', Helvetica" }}
-              >
+              <h3 className="text-h3 text-center mb-4">
                 {feature.title.replace('\n', ' ')}
               </h3>
-              <p 
-                className="text-gray-600 text-sm leading-relaxed text-center"
-                style={{ fontFamily: "'Satoshi', Helvetica" }}
-              >
+              <p className="text-body-sm text-gray-600 text-center">
                 {feature.description.replace(/\n/g, ' ')}
               </p>
             </div>

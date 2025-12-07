@@ -311,9 +311,44 @@
     @apply border-border;
   }
 
+  html {
+    font-family: 'Satoshi', 'Helvetica', sans-serif;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: 'Satoshi', 'Helvetica', sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Satoshi', 'Helvetica', sans-serif;
+    color: #191818;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-[52px] font-bold leading-[1.1] tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-[42px] font-bold leading-[1.15] tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-[28px] font-semibold leading-[1.2];
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-medium leading-[1.3];
+  }
+
+  p {
+    font-family: 'Satoshi', 'Helvetica', sans-serif;
+    @apply text-base leading-relaxed text-gray-600;
+  }
+
+  a {
+    font-family: 'Satoshi', 'Helvetica', sans-serif;
   }
 }
 

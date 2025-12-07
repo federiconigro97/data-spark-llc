@@ -79,45 +79,19 @@ module.exports = {
         },
       },
       fontFamily: {
-        "federiconigro-wixstudio-com-font-awesome-5-brands-regular":
-          "var(--federiconigro-wixstudio-com-font-awesome-5-brands-regular-font-family)",
-        "federiconigro-wixstudio-com-roboto-medium":
-          "var(--federiconigro-wixstudio-com-roboto-medium-font-family)",
-        "federiconigro-wixstudio-com-roboto-regular":
-          "var(--federiconigro-wixstudio-com-roboto-regular-font-family)",
-        "federiconigro-wixstudio-com-satoshi-medium":
-          "var(--federiconigro-wixstudio-com-satoshi-medium-font-family)",
-        "federiconigro-wixstudio-com-satoshi-regular":
-          "var(--federiconigro-wixstudio-com-satoshi-regular-font-family)",
-        "federiconigro-wixstudio-com-semantic-button":
-          "var(--federiconigro-wixstudio-com-semantic-button-font-family)",
-        "federiconigro-wixstudio-com-semantic-heading-1":
-          "var(--federiconigro-wixstudio-com-semantic-heading-1-font-family)",
-        "federiconigro-wixstudio-com-semantic-heading-2":
-          "var(--federiconigro-wixstudio-com-semantic-heading-2-font-family)",
-        "federiconigro-wixstudio-com-semantic-heading-3":
-          "var(--federiconigro-wixstudio-com-semantic-heading-3-font-family)",
-        "federiconigro-wixstudio-com-semantic-input":
-          "var(--federiconigro-wixstudio-com-semantic-input-font-family)",
-        "federiconigro-wixstudio-com-semantic-label":
-          "var(--federiconigro-wixstudio-com-semantic-label-font-family)",
-        "federiconigro-wixstudio-com-semantic-link":
-          "var(--federiconigro-wixstudio-com-semantic-link-font-family)",
-        "federiconigro-wixstudio-com-semantic-textarea":
-          "var(--federiconigro-wixstudio-com-semantic-textarea-font-family)",
-        "federiconigro-wixstudio-com-switzer-regular":
-          "var(--federiconigro-wixstudio-com-switzer-regular-font-family)",
-        "federiconigro-wixstudio-com-switzer-variable-regular":
-          "var(--federiconigro-wixstudio-com-switzer-variable-regular-font-family)",
-        sans: [
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
-        ],
+        satoshi: ["'Satoshi'", "Helvetica", "sans-serif"],
+        sans: ["'Satoshi'", "Helvetica", "ui-sans-serif", "system-ui", "sans-serif"],
+      },
+      fontSize: {
+        'display': ['52px', { lineHeight: '1.1', fontWeight: '700' }],
+        'h1': ['42px', { lineHeight: '1.15', fontWeight: '700' }],
+        'h2': ['32px', { lineHeight: '1.2', fontWeight: '600' }],
+        'h3': ['24px', { lineHeight: '1.25', fontWeight: '600' }],
+        'h4': ['20px', { lineHeight: '1.3', fontWeight: '500' }],
+        'body-lg': ['18px', { lineHeight: '1.6', fontWeight: '400' }],
+        'body': ['16px', { lineHeight: '1.6', fontWeight: '400' }],
+        'body-sm': ['14px', { lineHeight: '1.5', fontWeight: '400' }],
+        'caption': ['12px', { lineHeight: '1.4', fontWeight: '400' }],
       },
       borderRadius: {
         lg: "var(--radius)",

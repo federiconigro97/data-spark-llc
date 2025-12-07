@@ -40,8 +40,7 @@ export const ContactSection = (): JSX.Element => {
               href={link.href}
               rel="noopener noreferrer"
               target="_blank"
-              className="inline-flex items-center gap-3 text-[#191818]/80 hover:text-[#191818] text-lg transition-all duration-200 group"
-              style={{ fontFamily: "'Satoshi', Helvetica" }}
+              className="inline-flex items-center gap-3 text-[#191818]/80 hover:text-[#191818] text-body-lg transition-all duration-200 group"
             >
               <span className="p-2 rounded-lg bg-black/5 group-hover:bg-[#fbb84b]/20 transition-colors">
                 {link.icon}
@@ -49,10 +48,7 @@ export const ContactSection = (): JSX.Element => {
               {link.label}
             </a>
           ) : (
-            <span 
-              className="inline-flex items-center gap-3 text-[#191818]/60 text-lg cursor-default"
-              style={{ fontFamily: "'Satoshi', Helvetica" }}
-            >
+            <span className="inline-flex items-center gap-3 text-[#191818]/60 text-body-lg cursor-default">
               <span className="p-2 rounded-lg bg-black/5">
                 {link.icon}
               </span>
