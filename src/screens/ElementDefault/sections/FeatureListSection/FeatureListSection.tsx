@@ -24,36 +24,33 @@ const features = [
 
 export const FeatureListSection = (): JSX.Element => {
   return (
-    <section className="w-full flex justify-center gap-5 mt-[-0.01px]">
+    <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
       {features.map((feature, index) => (
         <Card
           key={index}
-          className="flex-1 max-w-[436.67px] border-0 shadow-none bg-transparent"
+          className="border-0 shadow-none bg-transparent"
         >
-          <CardContent className="flex flex-col items-start pt-10 pb-0 px-0">
-            <div className="flex flex-col items-start w-full">
-              <div className="flex flex-col max-w-[99999.5px] items-start pl-[0.5px] pr-0 pt-0 pb-[23.64px] w-full">
-                <h3 className="flex items-center justify-center w-full mt-[-1.00px] [font-family:'Satoshi-Bold',Helvetica] font-bold text-federiconigrowixstudiocomcod-gray text-[33.8px] tracking-[0] leading-[37.1px] whitespace-pre-line">
-                  {feature.title}
-                </h3>
-              </div>
+          <CardContent className="flex flex-col p-0">
+            <div className="mb-6">
+              <h3 
+                className="font-bold text-[#191818] text-2xl md:text-[28px] leading-tight mb-4 text-center"
+                style={{ fontFamily: "'Satoshi', Helvetica" }}
+              >
+                {feature.title.replace('\n', ' ')}
+              </h3>
+              <p 
+                className="text-gray-600 text-sm leading-relaxed text-center"
+                style={{ fontFamily: "'Satoshi', Helvetica" }}
+              >
+                {feature.description.replace(/\n/g, ' ')}
+              </p>
+            </div>
 
-              <div className="flex flex-col max-w-[99999px] w-[342.09px] items-start pt-0 pb-[48.04px] px-0">
-                <p className="flex items-center justify-center w-full mt-[-1.00px] [font-family:'Satoshi-Regular',Helvetica] font-normal text-federiconigrowixstudiocomblack text-sm tracking-[0] leading-[19.2px] whitespace-pre-line">
-                  {feature.description}
-                </p>
-              </div>
-
-              <div className="w-full h-[403.17px]">
-                <div className="w-full h-full flex rounded-xl overflow-hidden">
-                  <div className="flex w-full h-full relative flex-col items-start">
-                    <div
-                      className="w-full h-full bg-cover bg-center bg-no-repeat"
-                      style={{ backgroundImage: `url(${feature.image})` }}
-                    />
-                  </div>
-                </div>
-              </div>
+            <div className="w-full h-[400px] rounded-xl overflow-hidden">
+              <div
+                className="w-full h-full bg-cover bg-center bg-no-repeat"
+                style={{ backgroundImage: `url(${feature.image})` }}
+              />
             </div>
           </CardContent>
         </Card>
