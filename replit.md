@@ -83,3 +83,12 @@ The build output will be in the `dist` folder.
 - Added gradient section backgrounds and visual separators throughout
 - Fixed responsive grid on metrics (grid-cols-1 sm:grid-cols-2 lg:grid-cols-4) for mobile readability
 - Consolidated tailwind.css by removing duplicate @tailwind directives
+
+### Layout Fixes (December 2024)
+- Hero section now uses split layout with text on left and hero image on right (responsive grid)
+- "We Walk Our Talk" section redesigned with proper 3-column grid layout and image mosaic
+- "Results That Move The Needle" section fixed with responsive 4-column metrics grid
+- KPI metric cards refactored into gradient tiles with hover effects
+- "Our Complete Growth Process" section centered with proper typography
+- FAQ section centered with max-width constraint for better readability
+- Removed all absolute positioning in favor of responsive CSS Grid layouts
