@@ -40,7 +40,7 @@ export const HeaderSection = (): JSX.Element => {
           </nav>
 
           <a
-            href="https://calendly.com/federiconigro-dataspark/ecommerce"
+            href="https://calendly.com/federiconigro-dataspark/growth"
             rel="noopener noreferrer"
             target="_blank"
             className="inline-flex items-center justify-center px-5 py-2.5 bg-[#fbb84b] hover:bg-[#f5a623] text-[#191818] rounded-xl font-medium text-sm transition-all duration-300 shadow-[0_4px_20px_-5px_rgba(251,184,75,0.5)] hover:shadow-[0_8px_30px_-5px_rgba(251,184,75,0.6)] hover:-translate-y-0.5"
