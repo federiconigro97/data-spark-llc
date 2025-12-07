@@ -1,7 +1,6 @@
 import React from "react";
-import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
-import { AboutUsSection } from "./sections/AboutUsSection";
+import { ContactForm } from "../../components/ContactForm/ContactForm";
 import { AdditionalInfoSection } from "./sections/AdditionalInfoSection";
 import { ComponentNodeSection } from "./sections/ComponentNodeSection";
 import { ContactSection } from "./sections/ContactSection";
@@ -29,10 +28,7 @@ import { MainFeatureSection } from "./sections/MainFeatureSection";
 import { MainSectionWrapper } from "./sections/MainSectionWrapper";
 import { MainWrapperSection } from "./sections/MainWrapperSection";
 import { NewsletterSection } from "./sections/NewsletterSection";
-import { PortfolioSection } from "./sections/PortfolioSection";
-import { ServicesSection } from "./sections/ServicesSection";
 import { StatsSection } from "./sections/StatsSection";
-import { TestimonialsSection } from "./sections/TestimonialsSection";
 
 const logoImages = [
   "/c837a6-a7345f501dc3422d945379f448084e05-mv2-jpg.png",
@@ -191,34 +187,16 @@ export const ElementDefault = (): JSX.Element => {
                     <Card className="w-full bg-white rounded-3xl border border-black/5 shadow-xl overflow-hidden">
                       <CardContent className="p-8 md:p-10">
                         <div className="flex flex-col gap-6 w-full">
-                          <div className="mb-2">
-                            <span 
-                              className="text-[#3d3b8e] text-sm font-medium tracking-wide uppercase"
-                              style={{ fontFamily: "'Satoshi', Helvetica" }}
-                            >
+                          <div className="mb-4">
+                            <span className="text-[#3d3b8e] text-caption font-medium tracking-wide uppercase">
                               Get Started
                             </span>
-                            <h2 
-                              className="text-2xl md:text-3xl font-semibold text-[#191818] mt-1"
-                              style={{ fontFamily: "'Satoshi', Helvetica" }}
-                            >
+                            <h2 className="text-h2 mt-1">
                               Contact us
                             </h2>
                           </div>
 
-                          <AboutUsSection />
-                          <ServicesSection />
-                          <TestimonialsSection />
-                          <PortfolioSection />
-
-                          <Button className="w-full bg-gradient-to-r from-[#3d3b8e] to-[#5c5aae] hover:from-[#4d4b9e] hover:to-[#6c6abe] text-white rounded-xl py-4 h-auto shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5">
-                            <span 
-                              className="font-medium text-base"
-                              style={{ fontFamily: "'Satoshi', Helvetica" }}
-                            >
-                              Submit
-                            </span>
-                          </Button>
+                          <ContactForm />
                         </div>
                       </CardContent>
                     </Card>
