@@ -16,7 +16,7 @@ export const HeroSection = (): JSX.Element => {
         className="bg-[#fbb84b] hover:bg-[#f5a623] rounded-xl px-8 py-4 h-auto shadow-[0_10px_40px_-10px_rgba(251,184,75,0.5)] hover:shadow-[0_20px_50px_-15px_rgba(251,184,75,0.6)] transition-all duration-300 hover:-translate-y-0.5"
       >
         <a
-          href="https://calendly.com/federiconigro-dataspark/ecommerce"
+          href="https://calendly.com/federiconigro-dataspark/growth"
           rel="noopener noreferrer"
           target="_blank"
           className="font-medium text-[#191818] text-base md:text-lg"
