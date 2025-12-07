@@ -13,7 +13,7 @@ export const GenericListItemSection = (): JSX.Element => {
         850K+
       </span>
       <p 
-        className="relative text-sm md:text-base text-center opacity-90 leading-relaxed"
+        className="relative text-sm md:text-base text-center text-white leading-relaxed"
         style={{ fontFamily: "'Satoshi', Helvetica" }}
       >
         In tracked revenue generated through our complete growth system

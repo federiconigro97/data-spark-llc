@@ -13,7 +13,7 @@ export const ComponentNodeSection = (): JSX.Element => {
         +42%
       </span>
       <p 
-        className="relative text-sm md:text-base text-center opacity-90 leading-relaxed"
+        className="relative text-sm md:text-base text-center text-white leading-relaxed"
         style={{ fontFamily: "'Satoshi', Helvetica" }}
       >
         Average customer list growth through strategic optimization

@@ -13,7 +13,7 @@ export const ListItem1Section = (): JSX.Element => {
         -28%
       </span>
       <p 
-        className="relative text-sm md:text-base text-center opacity-90 leading-relaxed"
+        className="relative text-sm md:text-base text-center text-white leading-relaxed"
         style={{ fontFamily: "'Satoshi', Helvetica" }}
       >
         Reduction in CAC through retention marketing and referrals

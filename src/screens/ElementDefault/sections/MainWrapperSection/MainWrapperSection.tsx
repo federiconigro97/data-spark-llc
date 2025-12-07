@@ -65,13 +65,13 @@ export const MainWrapperSection = (): JSX.Element => {
           <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-500" />
           <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
           
-          <span className="relative text-caption opacity-90 mb-1 md:mb-2 tracking-wide uppercase">
+          <span className="relative text-caption text-white mb-1 md:mb-2 tracking-wide uppercase">
             {metric.description}
           </span>
-          <span className="relative text-3xl md:text-5xl font-bold mb-1 md:mb-2 tracking-tight">
+          <span className="relative text-3xl md:text-5xl font-bold text-white mb-1 md:mb-2 tracking-tight">
             {metric.value}
           </span>
-          <span className="relative text-body-sm font-medium opacity-90">
+          <span className="relative text-body-sm font-medium text-white">
             {metric.label}
           </span>
         </div>

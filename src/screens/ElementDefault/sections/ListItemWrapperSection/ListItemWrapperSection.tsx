@@ -13,7 +13,7 @@ export const ListItemWrapperSection = (): JSX.Element => {
         120K+
       </span>
       <p 
-        className="relative text-sm md:text-base text-center opacity-90 leading-relaxed"
+        className="relative text-sm md:text-base text-center text-white leading-relaxed"
         style={{ fontFamily: "'Satoshi', Helvetica" }}
       >
         Saved on paid ads through high-converting stores and retention
