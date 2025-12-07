@@ -45,7 +45,7 @@ export const FeatureListSection = (): JSX.Element => {
   }, []);
 
   return (
-    <section ref={ref} className="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section ref={ref} className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
       {features.map((feature, index) => (
         <Card
           key={index}
@@ -58,16 +58,16 @@ export const FeatureListSection = (): JSX.Element => {
           }}
         >
           <CardContent className="flex flex-col p-0">
-            <div className="mb-6">
-              <h3 className="text-h3 text-center mb-4">
+            <div className="mb-4 sm:mb-6">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#191818] text-center mb-2 sm:mb-4">
                 {feature.title}
               </h3>
-              <p className="text-body-sm text-gray-600 text-center">
+              <p className="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
                 {feature.description}
               </p>
             </div>
 
-            <div className="w-full h-[400px] rounded-xl overflow-hidden">
+            <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-xl overflow-hidden">
               <div
                 className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
                 style={{ backgroundImage: `url(${feature.image})` }}

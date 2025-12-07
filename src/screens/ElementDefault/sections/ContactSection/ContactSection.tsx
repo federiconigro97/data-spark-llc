@@ -32,7 +32,7 @@ const contactLinks = [
 
 export const ContactSection = (): JSX.Element => {
   return (
-    <nav className="flex flex-col items-start gap-3">
+    <nav className="flex flex-col sm:flex-row md:flex-col items-center sm:items-start gap-2 sm:gap-4 md:gap-3">
       {contactLinks.map((link, index) => (
         <div key={index}>
           {link.href ? (
@@ -40,16 +40,16 @@ export const ContactSection = (): JSX.Element => {
               href={link.href}
               rel="noopener noreferrer"
               target="_blank"
-              className="inline-flex items-center gap-3 text-[#191818]/80 hover:text-[#191818] text-body-lg transition-all duration-200 group"
+              className="inline-flex items-center gap-2 sm:gap-3 text-[#191818]/80 hover:text-[#191818] text-sm sm:text-base transition-all duration-200 group"
             >
-              <span className="p-2 rounded-lg bg-black/5 group-hover:bg-[#fbb84b]/20 transition-colors">
+              <span className="p-1.5 sm:p-2 rounded-lg bg-black/5 group-hover:bg-[#fbb84b]/20 transition-colors">
                 {link.icon}
               </span>
               {link.label}
             </a>
           ) : (
-            <span className="inline-flex items-center gap-3 text-[#191818]/60 text-body-lg cursor-default">
-              <span className="p-2 rounded-lg bg-black/5">
+            <span className="inline-flex items-center gap-2 sm:gap-3 text-[#191818]/60 text-sm sm:text-base cursor-default">
+              <span className="p-1.5 sm:p-2 rounded-lg bg-black/5">
                 {link.icon}
               </span>
               {link.label}

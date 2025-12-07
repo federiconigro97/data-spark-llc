@@ -58,7 +58,7 @@ export const ElementDefault = (): JSX.Element => {
             />
 
             <section className="relative w-full bg-federiconigrowixstudiocomwild-sand">
-              <div className="flex items-start justify-center w-full px-[46.08px]">
+              <div className="flex flex-col md:flex-row items-start justify-center w-full px-4 sm:px-6 md:px-12">
                 <MainContentSection />
                 <ListWrapperSection />
               </div>
@@ -153,10 +153,10 @@ export const ElementDefault = (): JSX.Element => {
 
             <MainFeatureSection />
 
-            <section className="py-20 px-12 w-full bg-federiconigrowixstudiocomwild-sand">
+            <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 w-full bg-federiconigrowixstudiocomwild-sand">
               <div className="max-w-[1200px] mx-auto">
                 <HeroSection />
-                <div className="mt-12 w-full">
+                <div className="mt-8 sm:mt-10 md:mt-12 w-full">
                   <ListItem2Section />
                   <ListItem3Section />
                   <ListItem4Section />
@@ -166,9 +166,9 @@ export const ElementDefault = (): JSX.Element => {
               </div>
             </section>
 
-            <section className="py-16 px-12 w-full bg-white">
+            <section className="py-12 sm:py-14 md:py-16 px-4 sm:px-6 md:px-12 w-full bg-white">
               <div className="max-w-[1200px] mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
                   <ListItem7Section />
                   <ListItem8Section />
                   <ListItem9Section />
@@ -179,19 +179,19 @@ export const ElementDefault = (): JSX.Element => {
 
             <AdditionalInfoSection />
 
-            <section className="py-20 md:py-28 px-6 md:px-12 w-full bg-gradient-to-b from-federiconigrowixstudiocomwild-sand to-white">
+            <section id="contact" className="py-12 sm:py-16 md:py-28 px-4 sm:px-6 md:px-12 w-full bg-gradient-to-b from-federiconigrowixstudiocomwild-sand to-white">
               <div className="max-w-[1200px] mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-20 items-start">
                   <StatsSection />
                   <div className="w-full">
-                    <Card className="w-full bg-white rounded-3xl border border-black/5 shadow-xl overflow-hidden">
-                      <CardContent className="p-8 md:p-10">
-                        <div className="flex flex-col gap-6 w-full">
-                          <div className="mb-4">
-                            <span className="text-[#3d3b8e] text-caption font-medium tracking-wide uppercase">
+                    <Card className="w-full bg-white rounded-2xl sm:rounded-3xl border border-black/5 shadow-lg sm:shadow-xl overflow-hidden">
+                      <CardContent className="p-5 sm:p-6 md:p-10">
+                        <div className="flex flex-col gap-4 sm:gap-6 w-full">
+                          <div className="mb-2 sm:mb-4">
+                            <span className="text-[#3d3b8e] text-xs sm:text-sm font-medium tracking-wide uppercase">
                               Get Started
                             </span>
-                            <h2 className="text-h2 mt-1">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#191818] mt-1">
                               Contact us
                             </h2>
                           </div>
@@ -205,49 +205,49 @@ export const ElementDefault = (): JSX.Element => {
               </div>
             </section>
 
-            <footer className="w-full bg-gradient-to-b from-white to-federiconigrowixstudiocomgallery py-16 md:py-20 px-6 md:px-12">
+            <footer className="w-full bg-gradient-to-b from-white to-federiconigrowixstudiocomgallery py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-12">
               <div className="max-w-[1200px] mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 mb-12">
-                  <div className="flex flex-col items-start">
-                    <div className="flex items-center gap-3 mb-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-12">
+                  <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
                       <img
-                        className="w-12 h-auto"
+                        className="w-10 sm:w-12 h-auto"
                         alt="Data Spark Logo"
                         src="/group.png"
                       />
                       <h3 
-                        className="font-semibold text-[#191818] text-xl"
+                        className="font-semibold text-[#191818] text-lg sm:text-xl"
                         style={{ fontFamily: "'Satoshi', Helvetica" }}
                       >
                         Data Spark LLC
                       </h3>
                     </div>
                     <p 
-                      className="text-gray-500 text-sm"
+                      className="text-gray-500 text-xs sm:text-sm"
                       style={{ fontFamily: "'Satoshi', Helvetica" }}
                     >
                       Growth marketing for DTC brands
                     </p>
                   </div>
 
-                  <div className="flex flex-col items-start">
+                  <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                     <h4 
-                      className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-4"
+                      className="text-xs sm:text-sm font-medium text-gray-400 uppercase tracking-wide mb-3 sm:mb-4"
                       style={{ fontFamily: "'Satoshi', Helvetica" }}
                     >
                       Our Mission
                     </h4>
                     <p 
-                      className="text-gray-600 text-base leading-relaxed"
+                      className="text-gray-600 text-sm sm:text-base leading-relaxed"
                       style={{ fontFamily: "'Satoshi', Helvetica" }}
                     >
                       Help founders turn their origin stories into engines of sustainable growth. Every brand has a spark—our job is to ignite it and keep it burning bright.
                     </p>
                   </div>
 
-                  <div className="flex flex-col items-start">
+                  <div className="flex flex-col items-center sm:items-start text-center sm:text-left sm:col-span-2 md:col-span-1">
                     <h4 
-                      className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-4"
+                      className="text-xs sm:text-sm font-medium text-gray-400 uppercase tracking-wide mb-3 sm:mb-4"
                       style={{ fontFamily: "'Satoshi', Helvetica" }}
                     >
                       Connect
@@ -256,7 +256,7 @@ export const ElementDefault = (): JSX.Element => {
                   </div>
                 </div>
 
-                <div className="section-divider mb-8" />
+                <div className="section-divider mb-6 sm:mb-8" />
 
                 <NewsletterSection />
               </div>
