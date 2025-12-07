@@ -9,19 +9,15 @@ export const CoreContentSection = (): JSX.Element => {
           <div className="max-w-[600px]">
             <div className="mb-6">
               <span className="inline-block px-4 py-2 rounded-full bg-[#fbb84b]/10 text-[#b8860b] text-sm font-medium tracking-wide uppercase">
-                Growth Marketing Agency
+                Growth Marketing Partner
               </span>
             </div>
 
             <h1 
-              className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight tracking-tight text-[#191818] mb-6"
+              className="text-4xl md:text-5xl lg:text-[52px] font-bold leading-[1.1] tracking-tight text-[#191818] mb-6"
               style={{ fontFamily: "'Satoshi', Helvetica" }}
             >
-              Complete Growth System
-              <br className="hidden md:block" />
-              <span className="md:hidden"> </span>for DTC Brands That Want
-              <br className="hidden md:block" />
-              <span className="md:hidden"> </span>
+              Complete Growth System for DTC Brands That Want{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#fbb84b] to-[#ff8a00]">Real, Sustainable Revenue</span>
             </h1>
 
@@ -34,7 +30,7 @@ export const CoreContentSection = (): JSX.Element => {
 
             <div className="flex gap-4 items-center flex-wrap">
               <a
-                href="https://calendly.com/federiconigro-dataspark/ecommerce"
+                href="https://calendly.com/federiconigro-dataspark/growth?month=2025-12"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#fbb84b] hover:bg-[#f5a623] rounded-xl font-medium text-[#191818] text-lg transition-all duration-300 shadow-[0_10px_40px_-10px_rgba(251,184,75,0.5)] hover:shadow-[0_20px_50px_-15px_rgba(251,184,75,0.6)] hover:-translate-y-0.5 active:translate-y-0"
