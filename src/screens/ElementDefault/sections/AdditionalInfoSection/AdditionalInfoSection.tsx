@@ -32,8 +32,8 @@ const faqData = [
 export const AdditionalInfoSection = (): JSX.Element => {
   return (
     <section className="w-full bg-white py-20 md:py-28 px-6 md:px-12">
-      <div className="max-w-[900px] mx-auto lg:mx-0 lg:ml-12">
-        <div className="mb-12">
+      <div className="max-w-[800px] mx-auto">
+        <div className="mb-12 text-center">
           <span className="inline-block px-4 py-2 rounded-full bg-[#3d3b8e]/10 text-[#3d3b8e] text-sm font-medium tracking-wide uppercase mb-4">
             Got Questions?
           </span>
@@ -61,7 +61,7 @@ export const AdditionalInfoSection = (): JSX.Element => {
                 </span>
               </AccordionTrigger>
               <AccordionContent 
-                className="pb-5 text-gray-600 text-base leading-relaxed"
+                className="pb-5 text-gray-600 text-base leading-relaxed text-left"
                 style={{ fontFamily: "'Satoshi', Helvetica" }}
               >
                 {faq.answer}

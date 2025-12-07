@@ -1,32 +1,23 @@
 import React from "react";
-import { Card, CardContent } from "../../../../components/ui/card";
 
 export const ComponentNodeSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col w-full items-start relative">
-      <Card className="w-full border-0 shadow-none">
-        <CardContent className="bg-federiconigrowixstudiocomcasablanca rounded-[13.5px] p-0">
-          <div className="flex flex-col items-start gap-[108.31px] px-[23.04px] py-[37.44px]">
-            <div className="flex flex-col w-full items-start">
-              <h2 className="w-full [font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomcod-gray text-[67.5px] leading-[81px] tracking-[0] text-center">
-                +42%
-              </h2>
-            </div>
-
-            <div className="flex flex-col items-start">
-              <p className="[font-family:'Satoshi-Regular',Helvetica] font-normal text-federiconigrowixstudiocomcod-gray text-[20.3px] tracking-[0] leading-[24.3px]">
-                Average customer list growth
-                <br />
-                through strategic opt-in forms,
-                <br />
-                lead magnets, and conversion-
-                <br />
-                optimized touchpoints
-              </p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-    </section>
+    <div className="group relative flex flex-col items-center justify-center p-6 md:p-8 rounded-2xl bg-gradient-to-br from-[#3d3b8e] to-[#5c5aae] text-white min-h-[200px] overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl cursor-default">
+      <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-500" />
+      <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
+      
+      <span 
+        className="relative text-4xl md:text-5xl font-bold mb-3 tracking-tight"
+        style={{ fontFamily: "'Satoshi', Helvetica" }}
+      >
+        +42%
+      </span>
+      <p 
+        className="relative text-sm md:text-base text-center opacity-90 leading-relaxed"
+        style={{ fontFamily: "'Satoshi', Helvetica" }}
+      >
+        Average customer list growth through strategic optimization
+      </p>
+    </div>
   );
 };

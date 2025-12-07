@@ -1,26 +1,23 @@
 import React from "react";
-import { Card, CardContent } from "../../../../components/ui/card";
 
 export const ListItem1Section = (): JSX.Element => {
   return (
-    <Card className="w-full max-w-[325.98px] bg-federiconigrowixstudiocomcasablanca rounded-[13.5px] border-0">
-      <CardContent className="flex flex-col items-start gap-[132.95px] px-[23.04px] py-[37.44px]">
-        <div className="flex flex-col w-full">
-          <h2 className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomcod-gray text-[67.5px] leading-[81px] tracking-[0] text-center">
-            -28%
-          </h2>
-        </div>
-
-        <div className="flex flex-col w-full">
-          <p className="[font-family:'Satoshi-Regular',Helvetica] font-normal text-federiconigrowixstudiocomcod-gray text-[20.3px] tracking-[0] leading-[24.3px] text-center">
-            Reduction in CAC through
-            <br />
-            retention marketing, referral
-            <br />
-            programs, and organic growth
-          </p>
-        </div>
-      </CardContent>
-    </Card>
+    <div className="group relative flex flex-col items-center justify-center p-6 md:p-8 rounded-2xl bg-gradient-to-br from-[#5a4a3d] to-[#7a6a5d] text-white min-h-[200px] overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl cursor-default">
+      <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-500" />
+      <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
+      
+      <span 
+        className="relative text-4xl md:text-5xl font-bold mb-3 tracking-tight"
+        style={{ fontFamily: "'Satoshi', Helvetica" }}
+      >
+        -28%
+      </span>
+      <p 
+        className="relative text-sm md:text-base text-center opacity-90 leading-relaxed"
+        style={{ fontFamily: "'Satoshi', Helvetica" }}
+      >
+        Reduction in CAC through retention marketing and referrals
+      </p>
+    </div>
   );
 };

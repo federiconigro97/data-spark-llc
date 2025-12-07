@@ -118,13 +118,15 @@ export const ElementDefault = (): JSX.Element => {
               </div>
             </section>
 
-            <section className="flex flex-col items-start gap-[67.5px] pt-[14.4px] pb-[60px] px-[46.08px] relative w-full bg-federiconigrowixstudiocomwild-sand">
-              <FeatureSection />
-              <div className="flex flex-wrap gap-[0px_14.6px] w-full items-start">
-                <GenericListItemSection />
-                <ListItemWrapperSection />
-                <ComponentNodeSection />
-                <ListItem1Section />
+            <section className="py-16 md:py-24 px-6 md:px-12 w-full bg-federiconigrowixstudiocomwild-sand">
+              <div className="max-w-[1200px] mx-auto">
+                <FeatureSection />
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-12">
+                  <GenericListItemSection />
+                  <ListItemWrapperSection />
+                  <ComponentNodeSection />
+                  <ListItem1Section />
+                </div>
               </div>
             </section>
 

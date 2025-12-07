@@ -1,96 +1,63 @@
 import React from "react";
-import { Card, CardContent } from "../../../../components/ui/card";
-
-const imageData = [
-  {
-    position: "top-9 left-[549px] w-[calc(100%_-_1117px)]",
-    width: "w-[323.45px]",
-    height: "h-[335.2px]",
-    src: "/picture---tennis-ball-mir-lle-png.png",
-    alt: "Tennis ball",
-  },
-  {
-    position: "top-9 left-[891px] w-[calc(100%_-_937px)]",
-    width: "w-[503.2px]",
-    height: "h-[335.2px]",
-    src: "/picture---cleanshot-2025-07-25-at-20-43-21-gif.png",
-    alt: "Animation",
-  },
-  {
-    position: "top-[389px] left-[549px] w-[calc(100%_-_937px)]",
-    width: "w-[503.19px]",
-    height: "h-[319.83px]",
-    src: "/picture---gemini-generated-image-e9wer4e9wer4e9we-jpg.png",
-    alt: "Generated image 1",
-  },
-  {
-    position: "top-[389px] left-[1070px] w-[calc(100%_-_1117px)]",
-    width: "w-[323.47px]",
-    height: "h-[319.83px]",
-    src: "/picture---gemini-generated-image-yrmbbryrmbbryrmb-jpg.png",
-    alt: "Generated image 2",
-  },
-];
 
 export const MainSectionWrapper = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-start relative w-full">
-      <div className="absolute w-full h-full top-0 left-0 bg-federiconigrowixstudiocomwild-sand" />
-
-      <div className="relative w-full h-[745.03px]">
-        <Card className="absolute w-[calc(100%_-_955px)] top-9 left-[46px] border-0 shadow-none">
-          <CardContent className="flex flex-col items-start pt-[67.5px] pb-[127.32px] px-[45px] bg-federiconigrowixstudiocommillbrook rounded-xl">
-            <h2 className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomgallery text-[54px] tracking-[0] leading-[70.2px]">
-              We Walk Our
-              <br />
-              Talk
-            </h2>
-          </CardContent>
-        </Card>
-
-        {imageData.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute ${image.position} h-[335px] flex`}
-          >
-            <div
-              className={`flex-1 ${image.width} flex rounded-xl overflow-hidden`}
-            >
-              <div
-                className={`${image.width} ${image.height} flex relative flex-col items-start`}
+    <section className="w-full bg-federiconigrowixstudiocomwild-sand py-16 md:py-24 px-6 md:px-12">
+      <div className="max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6">
+          <div className="lg:col-span-1 flex flex-col gap-4 md:gap-6">
+            <div className="bg-[#5d4a3d] rounded-2xl p-8 md:p-12 flex items-center min-h-[200px]">
+              <h2 
+                className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight"
+                style={{ fontFamily: "'Satoshi', Helvetica" }}
               >
-                <div
-                  className={`relative self-stretch w-full ${image.height} bg-cover bg-[50%_50%]`}
-                  style={{ backgroundImage: `url(${image.src})` }}
-                  role="img"
-                  aria-label={image.alt}
-                />
-              </div>
+                We Walk Our
+                <br />
+                Talk
+              </h2>
             </div>
-          </div>
-        ))}
 
-        <Card className="absolute w-[calc(100%_-_955px)] top-[389px] left-[46px] border-0 shadow-none">
-          <CardContent className="flex flex-col items-start pt-[43.89px] pb-[104.75px] px-[45px] bg-federiconigrowixstudiocomgallery rounded-xl">
-            <div className="flex flex-col w-[395.13px] items-start">
-              <p className="[font-family:'Satoshi-Regular',Helvetica] font-normal text-federiconigrowixstudiocomcod-gray text-[20.3px] tracking-[0] leading-[24.3px]">
-                When we created Mirellewear.com, we had
-                <br />
-                one vision: reclaim modesty and elegance
-                <br />
-                in the fitness industry.
-                <br />
-                By uncovering the &quot;why&quot; we translated it
-                <br />
-                into every details, from photo shootings to
-                <br />
-                web design, making the brand
-                <br />
-                unforgettable.
+            <div className="bg-gray-100 rounded-2xl p-6 md:p-8">
+              <p 
+                className="text-gray-700 text-base md:text-lg leading-relaxed"
+                style={{ fontFamily: "'Satoshi', Helvetica" }}
+              >
+                When we created Mirellewear.com, we had one vision: reclaim modesty and elegance in the fitness industry. By uncovering the "why" we translated it into every detail, from photo shootings to web design, making the brand unforgettable.
               </p>
             </div>
-          </CardContent>
-        </Card>
+          </div>
+
+          <div className="lg:col-span-2 grid grid-cols-2 gap-4 md:gap-6">
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src="/picture---tennis-ball-mir-lle-png.png"
+                alt="Tennis ball branding"
+                className="w-full h-full object-cover min-h-[200px]"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src="/picture---cleanshot-2025-07-25-at-20-43-21-gif.png"
+                alt="Website showcase"
+                className="w-full h-full object-cover min-h-[200px]"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src="/picture---gemini-generated-image-e9wer4e9wer4e9we-jpg.png"
+                alt="Product photography"
+                className="w-full h-full object-cover min-h-[200px]"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src="/picture---gemini-generated-image-yrmbbryrmbbryrmb-jpg.png"
+                alt="Landscape photography"
+                className="w-full h-full object-cover min-h-[200px]"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
