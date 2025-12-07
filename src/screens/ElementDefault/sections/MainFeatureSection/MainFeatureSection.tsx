@@ -39,7 +39,7 @@ export const MainFeatureSection = (): JSX.Element => {
               </div>
 
               <a
-                href="https://calendly.com/federiconigro-dataspark/ecommerce"
+                href="https://calendly.com/federiconigro-dataspark/growth"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="inline-flex items-center gap-2 w-fit px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl font-medium transition-all duration-300 border border-white/20 hover:border-white/30"
