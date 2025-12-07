@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../../../../components/ui/button";
 
 const navigationItems = [
   { label: "Work", href: "https://federiconigro.wixstudio.com/my-site" },
@@ -10,45 +9,46 @@ const navigationItems = [
 
 export const HeaderSection = (): JSX.Element => {
   return (
-    <header className="w-full">
-      <div className="flex items-center justify-between px-[46.08px] py-[28.13px] bg-federiconigrowixstudiocomgallery rounded-xl backdrop-blur-[15px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(15px)_brightness(100%)]">
-        <div className="flex items-center">
-          <a
-            href="https://federiconigro.wixstudio.com/my-site"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="[font-family:'Satoshi-MediumItalic',Helvetica] font-medium italic text-[#191818] text-[40.5px] leading-[48.6px] tracking-[0]"
-          >
-            dataspark
-          </a>
-        </div>
-
-        <nav className="flex items-center gap-0">
-          {navigationItems.map((item, index) => (
+    <header className="sticky top-0 z-50 w-full">
+      <div className="mx-4 md:mx-8 mt-4">
+        <div className="flex items-center justify-between px-6 md:px-10 py-4 bg-white/80 backdrop-blur-xl rounded-2xl shadow-[0_4px_30px_-5px_rgba(0,0,0,0.1)] border border-white/40">
+          <div className="flex items-center">
             <a
-              key={index}
-              href={item.href}
+              href="https://federiconigro.wixstudio.com/my-site"
               rel="noopener noreferrer"
               target="_blank"
-              className="px-[33px] py-2.5 [font-family:'Satoshi-Regular',Helvetica] font-normal text-[#191818] text-base leading-[22.4px] tracking-[0] hover:opacity-80 transition-opacity"
+              className="font-medium italic text-[#191818] text-2xl md:text-3xl leading-tight tracking-tight transition-opacity hover:opacity-80"
+              style={{ fontFamily: "'Satoshi', Helvetica" }}
             >
-              {item.label}
+              dataspark
             </a>
-          ))}
-        </nav>
+          </div>
 
-        <Button
-          asChild
-          className="bg-[#fbb84b] hover:bg-[#fbb84b]/90 text-federiconigrowixstudiocomcod-gray px-6 py-[18px] h-auto rounded [font-family:'Satoshi-Medium',Helvetica] font-medium text-base leading-[22.4px] tracking-[0]"
-        >
+          <nav className="hidden md:flex items-center gap-1">
+            {navigationItems.map((item, index) => (
+              <a
+                key={index}
+                href={item.href}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="px-5 py-2.5 rounded-lg text-[#191818]/80 text-sm font-medium leading-normal tracking-wide hover:text-[#191818] hover:bg-black/5 transition-all duration-200"
+                style={{ fontFamily: "'Satoshi', Helvetica" }}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+
           <a
             href="https://calendly.com/federiconigro-dataspark/ecommerce"
             rel="noopener noreferrer"
             target="_blank"
+            className="inline-flex items-center justify-center px-5 py-2.5 bg-[#fbb84b] hover:bg-[#f5a623] text-[#191818] rounded-xl font-medium text-sm transition-all duration-300 shadow-[0_4px_20px_-5px_rgba(251,184,75,0.5)] hover:shadow-[0_8px_30px_-5px_rgba(251,184,75,0.6)] hover:-translate-y-0.5"
+            style={{ fontFamily: "'Satoshi', Helvetica" }}
           >
-            Claim Your Free Strategy Call
+            Free Strategy Call
           </a>
-        </Button>
+        </div>
       </div>
     </header>
   );
