@@ -1,0 +1,321 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --federiconigro-wixstudio-com-font-awesome-5-brands-regular-font-family: "Font Awesome 5 Brands",
+    Helvetica;
+  --federiconigro-wixstudio-com-font-awesome-5-brands-regular-font-size: 34px;
+  --federiconigro-wixstudio-com-font-awesome-5-brands-regular-font-style: normal;
+  --federiconigro-wixstudio-com-font-awesome-5-brands-regular-font-weight: 400;
+  --federiconigro-wixstudio-com-font-awesome-5-brands-regular-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-font-awesome-5-brands-regular-line-height: 34px;
+  --federiconigro-wixstudio-com-roboto-medium-font-family: "Roboto", Helvetica;
+  --federiconigro-wixstudio-com-roboto-medium-font-size: 12px;
+  --federiconigro-wixstudio-com-roboto-medium-font-style: normal;
+  --federiconigro-wixstudio-com-roboto-medium-font-weight: 500;
+  --federiconigro-wixstudio-com-roboto-medium-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-roboto-medium-line-height: 18px;
+  --federiconigro-wixstudio-com-roboto-regular-font-family: "Roboto", Helvetica;
+  --federiconigro-wixstudio-com-roboto-regular-font-size: 14px;
+  --federiconigro-wixstudio-com-roboto-regular-font-style: normal;
+  --federiconigro-wixstudio-com-roboto-regular-font-weight: 400;
+  --federiconigro-wixstudio-com-roboto-regular-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-roboto-regular-line-height: 21px;
+  --federiconigro-wixstudio-com-satoshi-medium-font-family: "Satoshi", Helvetica;
+  --federiconigro-wixstudio-com-satoshi-medium-font-size: 18.299999237060547px;
+  --federiconigro-wixstudio-com-satoshi-medium-font-style: normal;
+  --federiconigro-wixstudio-com-satoshi-medium-font-weight: 500;
+  --federiconigro-wixstudio-com-satoshi-medium-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-satoshi-medium-line-height: 21.8700008392334px;
+  --federiconigro-wixstudio-com-satoshi-regular-font-family: "Satoshi",
+    Helvetica;
+  --federiconigro-wixstudio-com-satoshi-regular-font-size: 15px;
+  --federiconigro-wixstudio-com-satoshi-regular-font-style: normal;
+  --federiconigro-wixstudio-com-satoshi-regular-font-weight: 400;
+  --federiconigro-wixstudio-com-satoshi-regular-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-satoshi-regular-line-height: 18px;
+  --federiconigro-wixstudio-com-semantic-button-font-family: "Helvetica",
+    Helvetica;
+  --federiconigro-wixstudio-com-semantic-button-font-size: 14px;
+  --federiconigro-wixstudio-com-semantic-button-font-style: normal;
+  --federiconigro-wixstudio-com-semantic-button-font-weight: 400;
+  --federiconigro-wixstudio-com-semantic-button-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-semantic-button-line-height: normal;
+  --federiconigro-wixstudio-com-semantic-heading-1-font-family: "Switzer",
+    Helvetica;
+  --federiconigro-wixstudio-com-semantic-heading-1-font-size: 49px;
+  --federiconigro-wixstudio-com-semantic-heading-1-font-style: normal;
+  --federiconigro-wixstudio-com-semantic-heading-1-font-weight: 400;
+  --federiconigro-wixstudio-com-semantic-heading-1-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-semantic-heading-1-line-height: 75px;
+  --federiconigro-wixstudio-com-semantic-heading-2-font-family: "Satoshi",
+    Helvetica;
+  --federiconigro-wixstudio-com-semantic-heading-2-font-size: 56.29999923706055px;
+  --federiconigro-wixstudio-com-semantic-heading-2-font-style: normal;
+  --federiconigro-wixstudio-com-semantic-heading-2-font-weight: 400;
+  --federiconigro-wixstudio-com-semantic-heading-2-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-semantic-heading-2-line-height: 56.25px;
+  --federiconigro-wixstudio-com-semantic-heading-3-font-family: "Satoshi",
+    Helvetica;
+  --federiconigro-wixstudio-com-semantic-heading-3-font-size: 47.29999923706055px;
+  --federiconigro-wixstudio-com-semantic-heading-3-font-style: normal;
+  --federiconigro-wixstudio-com-semantic-heading-3-font-weight: 500;
+  --federiconigro-wixstudio-com-semantic-heading-3-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-semantic-heading-3-line-height: 56.70000076293945px;
+  --federiconigro-wixstudio-com-semantic-input-font-family: "Satoshi", Helvetica;
+  --federiconigro-wixstudio-com-semantic-input-font-size: 16px;
+  --federiconigro-wixstudio-com-semantic-input-font-style: normal;
+  --federiconigro-wixstudio-com-semantic-input-font-weight: 400;
+  --federiconigro-wixstudio-com-semantic-input-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-semantic-input-line-height: normal;
+  --federiconigro-wixstudio-com-semantic-label-font-family: "Satoshi", Helvetica;
+  --federiconigro-wixstudio-com-semantic-label-font-size: 14px;
+  --federiconigro-wixstudio-com-semantic-label-font-style: normal;
+  --federiconigro-wixstudio-com-semantic-label-font-weight: 400;
+  --federiconigro-wixstudio-com-semantic-label-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-semantic-label-line-height: 19.600000381469727px;
+  --federiconigro-wixstudio-com-semantic-link-font-family: "Satoshi", Helvetica;
+  --federiconigro-wixstudio-com-semantic-link-font-size: 16px;
+  --federiconigro-wixstudio-com-semantic-link-font-style: normal;
+  --federiconigro-wixstudio-com-semantic-link-font-weight: 400;
+  --federiconigro-wixstudio-com-semantic-link-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-semantic-link-line-height: 19.200000762939453px;
+  --federiconigro-wixstudio-com-semantic-textarea-font-family: "Satoshi",
+    Helvetica;
+  --federiconigro-wixstudio-com-semantic-textarea-font-size: 16px;
+  --federiconigro-wixstudio-com-semantic-textarea-font-style: normal;
+  --federiconigro-wixstudio-com-semantic-textarea-font-weight: 400;
+  --federiconigro-wixstudio-com-semantic-textarea-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-semantic-textarea-line-height: 24px;
+  --federiconigro-wixstudio-com-switzer-regular-font-family: "Switzer",
+    Helvetica;
+  --federiconigro-wixstudio-com-switzer-regular-font-size: 22px;
+  --federiconigro-wixstudio-com-switzer-regular-font-style: normal;
+  --federiconigro-wixstudio-com-switzer-regular-font-weight: 400;
+  --federiconigro-wixstudio-com-switzer-regular-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-switzer-regular-line-height: 30.799999237060547px;
+  --federiconigro-wixstudio-com-switzer-variable-regular-font-family: "Switzer Variable",
+    Helvetica;
+  --federiconigro-wixstudio-com-switzer-variable-regular-font-size: 14px;
+  --federiconigro-wixstudio-com-switzer-variable-regular-font-style: normal;
+  --federiconigro-wixstudio-com-switzer-variable-regular-font-weight: 400;
+  --federiconigro-wixstudio-com-switzer-variable-regular-letter-spacing: 0px;
+  --federiconigro-wixstudio-com-switzer-variable-regular-line-height: 14px;
+  --federiconigrowixstudiocomblack: rgba(0, 0, 0, 1);
+  --federiconigrowixstudiocomblack-30: rgba(0, 0, 0, 0.3);
+  --federiconigrowixstudiocomblue: rgba(57, 16, 237, 1);
+  --federiconigrowixstudiocomblue-ribbon: rgba(17, 109, 255, 1);
+  --federiconigrowixstudiocomboulder: rgba(117, 117, 117, 1);
+  --federiconigrowixstudiocomcasablanca: rgba(251, 184, 75, 1);
+  --federiconigrowixstudiocomcasablanca-70: rgba(251, 184, 75, 0.7);
+  --federiconigrowixstudiocomcod-gray: rgba(18, 18, 18, 1);
+  --federiconigrowixstudiocomgallery: rgba(236, 236, 236, 1);
+  --federiconigrowixstudiocomgigas: rgba(61, 59, 142, 1);
+  --federiconigrowixstudiocomindigo: rgba(57, 124, 202, 1);
+  --federiconigrowixstudiocomkillarney: rgba(65, 118, 72, 1);
+  --federiconigrowixstudiocommercury: rgba(233, 233, 233, 1);
+  --federiconigrowixstudiocommillbrook: rgba(100, 69, 54, 1);
+  --federiconigrowixstudiocommountain-meadow: rgba(16, 195, 121, 1);
+  --federiconigrowixstudiocomradical-red: rgba(255, 34, 85, 1);
+  --federiconigrowixstudiocomshark: rgba(33, 37, 41, 1);
+  --federiconigrowixstudiocomsilver: rgba(189, 189, 189, 1);
+  --federiconigrowixstudiocomtundora: rgba(69, 69, 69, 1);
+  --federiconigrowixstudiocomwhite: rgba(255, 255, 255, 1);
+  --federiconigrowixstudiocomwild-sand: rgba(245, 244, 245, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
