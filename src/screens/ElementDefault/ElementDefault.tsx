@@ -71,30 +71,51 @@ export const ElementDefault = (): JSX.Element => {
             <MainSectionWrapper />
             <ImageGallerySection />
 
-            <section className="relative w-full bg-federiconigrowixstudiocomwild-sand py-20 px-12">
+            <section className="relative w-full bg-gradient-to-b from-federiconigrowixstudiocomwild-sand to-white py-20 md:py-28 px-6 md:px-12">
               <div className="max-w-[1200px] mx-auto">
-                <h2 className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-[#191818] text-[40.5px] tracking-[0] leading-[48.6px] text-center mb-12">
-                  Results you can expect
-                </h2>
+                <div className="text-center mb-12 md:mb-16">
+                  <span 
+                    className="inline-block px-4 py-2 rounded-full bg-[#fbb84b]/10 text-[#b8860b] text-sm font-medium tracking-wide uppercase mb-4"
+                    style={{ fontFamily: "'Satoshi', Helvetica" }}
+                  >
+                    Proven Results
+                  </span>
+                  <h2 
+                    className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#191818] leading-tight"
+                    style={{ fontFamily: "'Satoshi', Helvetica" }}
+                  >
+                    Results you can expect
+                  </h2>
+                </div>
                 <MainWrapperSection />
               </div>
             </section>
 
-            <section className="flex flex-col items-start px-[45px] py-[45px] relative w-full bg-federiconigrowixstudiocomgallery">
-              <div className="flex flex-col items-start px-0 py-[31.5px] w-full mt-[-0.01px]">
-                <div className="flex flex-col w-full max-w-[1200px] mx-auto items-center">
-                  <div className="flex-col items-center pt-0 pb-[0.8px] px-0 w-full flex">
-                    <h2 className="flex items-center justify-center w-full mt-[-1.00px] [font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomcod-gray text-[40.5px] tracking-[0] leading-[48.6px] text-center">
-                      Your Complete Growth System
-                    </h2>
-                    <p className="[font-family:'Satoshi-Regular',Helvetica] font-normal text-federiconigrowixstudiocomcod-gray text-[20.3px] tracking-[0] leading-[28.3px] text-center mt-4 max-w-[800px]">
-                      Everything you need to scale profitably: strategy, design, retention, conversion optimization, and ongoing analytics.
-                    </p>
-                  </div>
+            <section className="relative w-full bg-white py-20 md:py-28 px-6 md:px-12">
+              <div className="max-w-[1200px] mx-auto">
+                <div className="text-center mb-12 md:mb-16">
+                  <span 
+                    className="inline-block px-4 py-2 rounded-full bg-[#3d3b8e]/10 text-[#3d3b8e] text-sm font-medium tracking-wide uppercase mb-4"
+                    style={{ fontFamily: "'Satoshi', Helvetica" }}
+                  >
+                    Our Services
+                  </span>
+                  <h2 
+                    className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#191818] leading-tight mb-4"
+                    style={{ fontFamily: "'Satoshi', Helvetica" }}
+                  >
+                    Your Complete Growth System
+                  </h2>
+                  <p 
+                    className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-[700px] mx-auto"
+                    style={{ fontFamily: "'Satoshi', Helvetica" }}
+                  >
+                    Everything you need to scale profitably: strategy, design, retention, conversion optimization, and ongoing analytics.
+                  </p>
                 </div>
-              </div>
 
-              <FeatureListSection />
+                <FeatureListSection />
+              </div>
             </section>
 
             <section className="flex flex-col items-start gap-[67.5px] pt-[14.4px] pb-[60px] px-[46.08px] relative w-full bg-federiconigrowixstudiocomwild-sand">
@@ -107,20 +128,28 @@ export const ElementDefault = (): JSX.Element => {
               </div>
             </section>
 
-            <section className="py-12 w-full bg-federiconigrowixstudiocomgallery overflow-hidden">
-              <div className="flex items-center justify-center gap-12 flex-wrap px-12">
-                {logoImages.map((src, index) => (
-                  <div
-                    key={`logo-${index}`}
-                    className="flex-shrink-0 h-8 flex items-center"
-                  >
-                    <img
-                      src={src}
-                      alt={`Partner logo ${index + 1}`}
-                      className="h-full w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                  </div>
-                ))}
+            <section className="py-16 md:py-20 w-full bg-gradient-to-b from-federiconigrowixstudiocomgallery to-federiconigrowixstudiocomwild-sand overflow-hidden">
+              <div className="section-container">
+                <p 
+                  className="text-center text-sm text-gray-500 uppercase tracking-widest mb-8"
+                  style={{ fontFamily: "'Satoshi', Helvetica" }}
+                >
+                  Trusted by leading DTC brands
+                </p>
+                <div className="flex items-center justify-center gap-8 md:gap-12 flex-wrap">
+                  {logoImages.map((src, index) => (
+                    <div
+                      key={`logo-${index}`}
+                      className="flex-shrink-0 h-8 md:h-10 flex items-center grayscale hover:grayscale-0 transition-all duration-300"
+                    >
+                      <img
+                        src={src}
+                        alt={`Partner logo ${index + 1}`}
+                        className="h-full w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </section>
 
@@ -152,25 +181,39 @@ export const ElementDefault = (): JSX.Element => {
 
             <AdditionalInfoSection />
 
-            <section className="py-20 px-12 w-full bg-federiconigrowixstudiocomwild-sand">
+            <section className="py-20 md:py-28 px-6 md:px-12 w-full bg-gradient-to-b from-federiconigrowixstudiocomwild-sand to-white">
               <div className="max-w-[1200px] mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
                   <StatsSection />
                   <div className="w-full">
-                    <Card className="w-full bg-federiconigrowixstudiocomgallery rounded-2xl border-0">
-                      <CardContent className="p-8">
+                    <Card className="w-full bg-white rounded-3xl border border-black/5 shadow-xl overflow-hidden">
+                      <CardContent className="p-8 md:p-10">
                         <div className="flex flex-col gap-6 w-full">
-                          <h2 className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomcod-gray text-3xl">
-                            Contact us
-                          </h2>
+                          <div className="mb-2">
+                            <span 
+                              className="text-[#3d3b8e] text-sm font-medium tracking-wide uppercase"
+                              style={{ fontFamily: "'Satoshi', Helvetica" }}
+                            >
+                              Get Started
+                            </span>
+                            <h2 
+                              className="text-2xl md:text-3xl font-semibold text-[#191818] mt-1"
+                              style={{ fontFamily: "'Satoshi', Helvetica" }}
+                            >
+                              Contact us
+                            </h2>
+                          </div>
 
                           <AboutUsSection />
                           <ServicesSection />
                           <TestimonialsSection />
                           <PortfolioSection />
 
-                          <Button className="w-full bg-[#3d3b8e] hover:bg-[#3d3b8e]/90 text-white rounded-lg py-3">
-                            <span className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-base">
+                          <Button className="w-full bg-gradient-to-r from-[#3d3b8e] to-[#5c5aae] hover:from-[#4d4b9e] hover:to-[#6c6abe] text-white rounded-xl py-4 h-auto shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5">
+                            <span 
+                              className="font-medium text-base"
+                              style={{ fontFamily: "'Satoshi', Helvetica" }}
+                            >
                               Submit
                             </span>
                           </Button>
@@ -182,32 +225,68 @@ export const ElementDefault = (): JSX.Element => {
               </div>
             </section>
 
-            <footer className="w-full bg-federiconigrowixstudiocomgallery py-12 px-12">
+            <footer className="w-full bg-gradient-to-b from-white to-federiconigrowixstudiocomgallery py-16 md:py-20 px-6 md:px-12">
               <div className="max-w-[1200px] mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 mb-12">
                   <div className="flex flex-col items-start">
-                    <img
-                      className="w-16 h-auto mb-4"
-                      alt="Data Spark Logo"
-                      src="/group.png"
-                    />
-                    <h3 className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomcod-gray text-2xl">
-                      Data Spark LLC
-                    </h3>
-                  </div>
-
-                  <div className="flex flex-col items-start">
-                    <p className="[font-family:'Satoshi-Regular',Helvetica] font-normal text-federiconigrowixstudiocomcod-gray text-lg leading-relaxed">
-                      Our mission is to help founders turn their origin stories into engines of sustainable growth. We believe every brand has a spark—our job is to ignite it and keep it burning bright.
+                    <div className="flex items-center gap-3 mb-4">
+                      <img
+                        className="w-12 h-auto"
+                        alt="Data Spark Logo"
+                        src="/group.png"
+                      />
+                      <h3 
+                        className="font-semibold text-[#191818] text-xl"
+                        style={{ fontFamily: "'Satoshi', Helvetica" }}
+                      >
+                        Data Spark LLC
+                      </h3>
+                    </div>
+                    <p 
+                      className="text-gray-500 text-sm"
+                      style={{ fontFamily: "'Satoshi', Helvetica" }}
+                    >
+                      Growth marketing for DTC brands
                     </p>
                   </div>
 
                   <div className="flex flex-col items-start">
+                    <h4 
+                      className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-4"
+                      style={{ fontFamily: "'Satoshi', Helvetica" }}
+                    >
+                      Our Mission
+                    </h4>
+                    <p 
+                      className="text-gray-600 text-base leading-relaxed"
+                      style={{ fontFamily: "'Satoshi', Helvetica" }}
+                    >
+                      Help founders turn their origin stories into engines of sustainable growth. Every brand has a spark—our job is to ignite it and keep it burning bright.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col items-start">
+                    <h4 
+                      className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-4"
+                      style={{ fontFamily: "'Satoshi', Helvetica" }}
+                    >
+                      Connect
+                    </h4>
                     <ContactSection />
                   </div>
                 </div>
 
-                <NewsletterSection />
+                <div className="section-divider mb-8" />
+
+                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                  <NewsletterSection />
+                  <p 
+                    className="text-gray-400 text-sm"
+                    style={{ fontFamily: "'Satoshi', Helvetica" }}
+                  >
+                    © 2024 Data Spark LLC. All rights reserved.
+                  </p>
+                </div>
               </div>
             </footer>
           </div>

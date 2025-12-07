@@ -3,21 +3,27 @@ import React from "react";
 export const StatsSection = (): JSX.Element => {
   return (
     <div className="flex flex-col w-full">
-      <h3 className="[font-family:'Satoshi-Medium',Helvetica] font-medium text-federiconigrowixstudiocomcod-gray text-[31.5px] tracking-[0] leading-[37.8px] mb-6">
+      <span 
+        className="text-[#fbb84b] text-sm font-medium tracking-wide uppercase mb-4"
+        style={{ fontFamily: "'Satoshi', Helvetica" }}
+      >
         Let's Talk Growth
-      </h3>
+      </span>
 
-      <h2 className="[font-family:'Satoshi-Bold',Helvetica] font-bold text-federiconigrowixstudiocomcod-gray text-[54px] tracking-[0] leading-[59.4px] mb-12">
+      <h2 
+        className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#191818] leading-tight mb-8"
+        style={{ fontFamily: "'Satoshi', Helvetica" }}
+      >
         Ready to Scale
         <br />
-        Profitably?
+        <span className="gradient-text">Profitably?</span>
       </h2>
 
-      <div className="w-full max-w-[400px] rounded-xl overflow-hidden">
+      <div className="w-full max-w-[350px] rounded-2xl overflow-hidden shadow-2xl group">
         <img
           src="/picture---img-6754-edited-png.png"
           alt="Profile"
-          className="w-full h-auto aspect-square object-cover"
+          className="w-full h-auto aspect-square object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>
     </div>

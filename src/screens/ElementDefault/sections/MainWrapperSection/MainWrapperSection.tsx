@@ -29,7 +29,7 @@ const metricsData = [
 
 export const MainWrapperSection = (): JSX.Element => {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
       {metricsData.map((metric, index) => (
         <div
           key={index}
