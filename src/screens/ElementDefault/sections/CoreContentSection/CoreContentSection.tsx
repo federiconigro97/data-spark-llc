@@ -30,7 +30,7 @@ export const CoreContentSection = (): JSX.Element => {
 
             <div className="flex gap-4 items-center flex-wrap">
               <a
-                href="https://calendly.com/federiconigro-dataspark/growth?month=2025-12"
+                href="https://calendly.com/federiconigro-dataspark/growth"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#fbb84b] hover:bg-[#f5a623] rounded-xl font-medium text-[#191818] text-lg transition-all duration-300 shadow-[0_10px_40px_-10px_rgba(251,184,75,0.5)] hover:shadow-[0_20px_50px_-15px_rgba(251,184,75,0.6)] hover:-translate-y-0.5 active:translate-y-0"
