@@ -280,15 +280,7 @@ export const ElementDefault = (): JSX.Element => {
 
                 <div className="section-divider mb-8" />
 
-                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                  <NewsletterSection />
-                  <p 
-                    className="text-gray-400 text-sm"
-                    style={{ fontFamily: "'Satoshi', Helvetica" }}
-                  >
-                    © 2024 Data Spark LLC. All rights reserved.
-                  </p>
-                </div>
+                <NewsletterSection />
               </div>
             </footer>
           </div>
