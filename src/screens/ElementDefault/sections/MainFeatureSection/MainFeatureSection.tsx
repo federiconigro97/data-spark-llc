@@ -57,7 +57,7 @@ export const MainFeatureSection = (): JSX.Element => {
             <div className="relative w-full aspect-video overflow-hidden">
               <img
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                alt="Team working"
+                alt="Data Spark LLC team collaborating on DTC brand growth strategies"
                 src="/container.svg"
               />
             </div>

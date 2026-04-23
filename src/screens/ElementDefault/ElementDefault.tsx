@@ -53,7 +53,7 @@ export const ElementDefault = (): JSX.Element => {
 
             <img
               className="w-full h-auto"
-              alt="Main section"
+              alt="Data Spark LLC growth marketing services divider - strategy, design, CRO, retention"
               src="/main---section.svg"
             />
 

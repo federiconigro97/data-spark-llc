@@ -49,7 +49,7 @@ export const FeatureListSection = (): JSX.Element => {
       {features.map((feature, index) => (
         <Card
           key={index}
-          className="border-0 shadow-none bg-transparent group"
+          className="border-0 shadow-none bg-transparent group h-full"
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? 'translateY(0)' : 'translateY(40px)',
@@ -57,8 +57,8 @@ export const FeatureListSection = (): JSX.Element => {
             transitionDelay: `${index * 150}ms`
           }}
         >
-          <CardContent className="flex flex-col p-0">
-            <div className="mb-4 sm:mb-6">
+          <CardContent className="flex flex-col h-full p-0">
+            <div className="mb-4 sm:mb-6 min-h-[100px] sm:min-h-[120px] flex flex-col justify-start">
               <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#191818] text-center mb-2 sm:mb-4">
                 {feature.title}
               </h3>
@@ -67,7 +67,7 @@ export const FeatureListSection = (): JSX.Element => {
               </p>
             </div>
 
-            <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-xl overflow-hidden">
+            <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-xl overflow-hidden mt-auto">
               <div
                 className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
                 style={{ backgroundImage: `url(${feature.image})` }}

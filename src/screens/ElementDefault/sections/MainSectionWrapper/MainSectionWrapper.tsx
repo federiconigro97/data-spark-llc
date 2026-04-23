@@ -31,28 +31,28 @@ export const MainSectionWrapper = (): JSX.Element => {
             <div className="rounded-2xl overflow-hidden">
               <img
                 src="/picture---tennis-ball-mir-lle-png.png"
-                alt="Tennis ball branding"
+                alt="Mirelle Wear branded tennis ball - custom athletic brand design by Data Spark LLC"
                 className="w-full h-full object-cover min-h-[200px]"
               />
             </div>
             <div className="rounded-2xl overflow-hidden">
               <img
                 src="/picture---cleanshot-2025-07-25-at-20-43-21-gif.png"
-                alt="Website showcase"
+                alt="Mirelle Wear ecommerce website design showcase - responsive DTC brand website"
                 className="w-full h-full object-cover min-h-[200px]"
               />
             </div>
             <div className="rounded-2xl overflow-hidden">
               <img
                 src="/picture---gemini-generated-image-e9wer4e9wer4e9we-jpg.png"
-                alt="Product photography"
+                alt="Professional product photography for DTC brand marketing campaigns"
                 className="w-full h-full object-cover min-h-[200px]"
               />
             </div>
             <div className="rounded-2xl overflow-hidden">
               <img
                 src="/picture---gemini-generated-image-yrmbbryrmbbryrmb-jpg.png"
-                alt="Landscape photography"
+                alt="Creative brand photography showcasing growth marketing campaign visuals"
                 className="w-full h-full object-cover min-h-[200px]"
               />
             </div>

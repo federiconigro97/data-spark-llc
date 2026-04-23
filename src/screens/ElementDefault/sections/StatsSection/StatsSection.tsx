@@ -22,7 +22,7 @@ export const StatsSection = (): JSX.Element => {
       <div className="w-full max-w-[250px] sm:max-w-[300px] lg:max-w-[350px] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl group">
         <img
           src="/picture---img-6754-edited-png.png"
-          alt="Profile"
+          alt="Federico Nigro - Founder of Data Spark LLC, DTC growth marketing expert"
           className="w-full h-auto aspect-square object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>

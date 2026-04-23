@@ -62,7 +62,7 @@ export const CoreContentSection = (): JSX.Element => {
               }}
             >
               <a
-                href="https://calendly.com/federiconigro-dataspark/growth"
+                href="https://tally.so/r/448WWA"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 bg-[#fbb84b] hover:bg-[#f5a623] rounded-xl font-medium text-[#191818] text-base sm:text-lg shadow-[0_10px_40px_-10px_rgba(251,184,75,0.5)] hover:shadow-[0_20px_50px_-15px_rgba(251,184,75,0.6)] hover:-translate-y-1 active:translate-y-0 transition-all duration-300"
@@ -76,7 +76,7 @@ export const CoreContentSection = (): JSX.Element => {
                 target="_blank"
                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 bg-transparent rounded-xl font-medium text-[#191818] text-base sm:text-lg border-2 border-[#191818]/20 hover:border-[#191818]/40 hover:bg-[#191818]/5 transition-all duration-300"
               >
-                Download Free Guide
+                Check the Free Guide
               </a>
             </div>
           </div>
@@ -93,7 +93,7 @@ export const CoreContentSection = (): JSX.Element => {
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl hover:shadow-3xl transition-shadow duration-500">
               <img
                 src="/picture---img-7625-jpg.png"
-                alt="Growth marketing results"
+                alt="DTC brand founders celebrating successful growth marketing results with Data Spark LLC"
                 className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
