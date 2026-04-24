@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "../../components/ui/card";
 import { ContactForm } from "../../components/ContactForm/ContactForm";
 import { AdditionalInfoSection } from "./sections/AdditionalInfoSection";
@@ -259,6 +260,16 @@ export const ElementDefault = (): JSX.Element => {
                 <div className="section-divider mb-6 sm:mb-8" />
 
                 <NewsletterSection />
+
+                <div className="flex justify-center mt-6 sm:mt-8">
+                  <Link
+                    to="/privacy-policy"
+                    className="text-xs text-gray-400 hover:text-gray-600 transition-colors duration-200"
+                    style={{ fontFamily: "'Satoshi', Helvetica" }}
+                  >
+                    Privacy Policy
+                  </Link>
+                </div>
               </div>
             </footer>
           </div>
