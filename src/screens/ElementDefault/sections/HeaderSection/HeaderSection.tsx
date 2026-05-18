@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navigationItems = [
@@ -10,40 +11,75 @@ const navigationItems = [
 
 export const HeaderSection = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isFounders = location.pathname.startsWith("/founders");
 
   return (
     <header className="sticky top-0 z-50 w-full">
       <div className="mx-3 sm:mx-4 md:mx-8 mt-3 sm:mt-4">
-        <div className="flex items-center justify-between px-4 sm:px-6 md:px-10 py-3 sm:py-4 bg-white/80 backdrop-blur-xl rounded-xl sm:rounded-2xl shadow-[0_4px_30px_-5px_rgba(0,0,0,0.1)] border border-white/40">
+        <div className="flex items-center justify-between px-3 sm:px-4 md:px-6 lg:px-8 py-3 sm:py-4 bg-white/80 backdrop-blur-xl rounded-xl sm:rounded-2xl shadow-[0_4px_30px_-5px_rgba(0,0,0,0.1)] border border-white/40">
+          {/* LEFT — Logo */}
           <div className="flex items-center">
             <a
               href="/"
-              className="font-medium italic text-[#191818] text-xl sm:text-2xl md:text-3xl leading-tight tracking-tight transition-opacity hover:opacity-80"
+              className="font-medium italic text-[#191818] text-lg sm:text-xl md:text-2xl lg:text-3xl leading-tight tracking-tight transition-opacity hover:opacity-80"
               style={{ fontFamily: "'Satoshi', Helvetica" }}
             >
               dataspark
             </a>
           </div>
 
-          <nav className="hidden md:flex items-center gap-1">
-            {navigationItems.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                className="px-5 py-2.5 rounded-lg text-[#191818]/80 text-sm font-medium leading-normal tracking-wide hover:text-[#191818] hover:bg-black/5 transition-all duration-200"
+          {/* CENTER — Selector pill + nav items (selector always visible, nav md+) */}
+          <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
+            <div className="flex items-center gap-0.5 p-0.5 sm:p-1 bg-black/5 rounded-full">
+              <Link
+                to="/"
+                className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-medium transition-all whitespace-nowrap ${
+                  !isFounders
+                    ? "bg-[#191818] text-white shadow-sm"
+                    : "text-[#191818]/60 hover:text-[#191818]"
+                }`}
                 style={{ fontFamily: "'Satoshi', Helvetica" }}
               >
-                {item.label}
-              </a>
-            ))}
-          </nav>
+                Ecom
+              </Link>
+              <Link
+                to="/founders"
+                className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-medium transition-all whitespace-nowrap ${
+                  isFounders
+                    ? "bg-[#191818] text-white shadow-sm"
+                    : "text-[#191818]/60 hover:text-[#191818]"
+                }`}
+                style={{ fontFamily: "'Satoshi', Helvetica" }}
+              >
+                Founders
+              </Link>
+            </div>
 
+            <div className="hidden md:flex items-center gap-1 lg:gap-2">
+              <div className="w-px h-5 bg-black/10" />
+              <nav className="flex items-center gap-0.5 lg:gap-1">
+                {navigationItems.map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.href}
+                    className="px-2.5 lg:px-4 py-2 rounded-lg text-[#191818]/80 text-xs lg:text-sm font-medium leading-normal tracking-wide hover:text-[#191818] hover:bg-black/5 transition-all duration-200"
+                    style={{ fontFamily: "'Satoshi', Helvetica" }}
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </nav>
+            </div>
+          </div>
+
+          {/* RIGHT — CTA + mobile menu toggle */}
           <div className="flex items-center gap-2 sm:gap-3">
             <a
               href="https://calendly.com/federiconigro-dataspark/growth"
               rel="noopener noreferrer"
               target="_blank"
-              className="hidden sm:inline-flex items-center justify-center px-4 sm:px-5 py-2 sm:py-2.5 bg-[#fbb84b] hover:bg-[#f5a623] text-[#191818] rounded-lg sm:rounded-xl font-medium text-xs sm:text-sm transition-all duration-300 shadow-[0_4px_20px_-5px_rgba(251,184,75,0.5)] hover:shadow-[0_8px_30px_-5px_rgba(251,184,75,0.6)] hover:-translate-y-0.5"
+              className="hidden sm:inline-flex items-center justify-center px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 bg-[#fbb84b] hover:bg-[#f5a623] text-[#191818] rounded-lg sm:rounded-xl font-medium text-[11px] sm:text-xs md:text-sm whitespace-nowrap transition-all duration-300 shadow-[0_4px_20px_-5px_rgba(251,184,75,0.5)] hover:shadow-[0_8px_30px_-5px_rgba(251,184,75,0.6)] hover:-translate-y-0.5"
               style={{ fontFamily: "'Satoshi', Helvetica" }}
             >
               Free Strategy Call
@@ -51,7 +87,7 @@ export const HeaderSection = (): JSX.Element => {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden flex items-center justify-center w-11 h-11 rounded-lg hover:bg-black/5 transition-colors"
+              className="md:hidden flex items-center justify-center w-9 sm:w-11 h-9 sm:h-11 rounded-lg hover:bg-black/5 transition-colors"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
