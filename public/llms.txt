@@ -1,49 +1,92 @@
 # Data Spark LLC
 
-> Data Spark LLC is a growth marketing partner helping DTC (Direct-to-Consumer) brands scale their revenue from $200K to $1M+ with sustainable strategies.
+> Boutique growth operator helping founders escape the scaling ceiling. Two audiences served: DTC brands ($200K–$1M+ revenue) and B2B SaaS / Service founders with traction (€30K–€500K MRR or €100K–€1M ARR). Foundation before tactics. Full-funnel systems that run without the founder. No junior, no agency overhead. 4–6 founders served per year, long-term partnerships only.
 
-## About Us
+## Operator
 
-Data Spark LLC provides a complete growth system for DTC brands that want real, sustainable revenue. We combine brand storytelling with data-driven optimization to create revenue machines that scale without burning cash on ads or constant discounts.
+- **Federico Nigro** (https://www.datasparkgrowth.com/founders): Boutique growth operator and founder of Data Spark LLC. Ex marketing director (Ofanto, scaled €200K→€450K in 12 months). Ex media buyer scaling €30–50K per month in paid ads. Ex content creator for Nike, Oppo, JD Sports, MyProtein, Alpha Industries. Engineering background. Based in Porto. Italian-international, working with founders in Italy, DACH, UK, and remote-friendly markets.
 
-## Our Services
+## Two audiences (industry selector on site)
 
-- [Growth Strategy](/): Complete strategic planning for DTC brand growth
-- [Conversion Rate Optimization (CRO)](/): Data-driven website optimization to increase conversions
-- [Retention Marketing](/): Email and SMS marketing to maximize customer lifetime value
-- [Brand Design](/): Visual identity and creative that converts
-- [Analytics & Reporting](/): Full-funnel tracking and insights
+- **Ecom & DTC brands** ($200K–$1M+ revenue): https://www.datasparkgrowth.com/
+- **Founders with traction (B2B SaaS / Ecom / Service)** (€30K–€500K MRR or €100K–€1M ARR): https://www.datasparkgrowth.com/founders
 
-## Why Brands Choose Us
+## Services — 4-tier ladder
 
-Most agencies offer pieces of the puzzle. We bring the complete system: strategy, design, retention marketing, conversion optimization, and analytics. One partner. One vision. Measurable growth.
+- **[Audit](https://tally.so/r/448WWA)** — Free 5-minute self-qualifying audit. Outputs the Founder Playbook (for disqualified founders) or a discovery call booking (for qualified ones).
+- **Foundation Sprint** — €5,000–10,000 flat, 6–10 weeks. Productized full-funnel install: positioning, tracking, funnel, paid ads launch, lifecycle base, analytics dashboard. Fixed scope, fixed price.
+- **Growth Operator Retainer** — €2,500–5,000 per month plus bonus results. Long-term partnership (default 6–12 months). Strategy, ads optimization, lifecycle, retention, lead gen. Federico is the strategic head; senior pros execute the tactical under his direction.
+- **Deployable Growth Engines** — €5,000–10,000 setup plus €1,000–2,000 per month managed, each. Four modular AI-powered systems: Lead Gen Engine, Lifecycle Engine, Ads Optimization Engine, Content Engine. Add-on to retainer or standalone.
 
-## Results We Deliver
+## Proof points (verified, public)
 
-- 3x Average ROAS improvement
-- 47% Email revenue increase
-- 2.1x Conversion rate boost
-- 156% Customer retention improvement
+- **Ofanto Italy**: €200K → €450K revenue in 12 months. Zero ads. Full-funnel scale via positioning + tracking + lifecycle.
+- **Ippocra / dPulses**: +37% month-over-month growth from one positioning pivot. Autopilot lead gen system built end-to-end.
+- **ESA BIC Brindisi**: First cohort filled at €9.30 per booking. Brand-new website built ground-up. Now scaling SEO.
+- **Anonymized B2B brand**: +€850,000 generated through email and lifecycle. Zero new ad spend (available under NDA on request).
 
-## Our Complete Growth Process
+## DTC results
 
-1. **Audit & Discovery**: Deep dive into your brand, data, and opportunities
-2. **Strategy Development**: Custom growth roadmap based on your goals
-3. **Implementation**: Execute high-impact optimizations
-4. **Optimization**: Continuous testing and improvement
-5. **Scale**: Expand what works across channels
+- 3x average ROAS improvement
+- 47% email revenue increase
+- 2.1x conversion rate boost
+- 156% customer retention improvement
+
+## What makes Federico different (positioning)
+
+- **Boutique senior, never junior.** Federico from pitch to delivery. No agency overhead, no account manager intermediary.
+- **Foundation before tactics.** Most growth folks jump to ads, SEO, or content. They skip positioning, tracking, lifecycle. Ads on a broken funnel is burn rate.
+- **Goals, not hours.** Retainer fixed, scope on outcome. Whether the week is 10 strategy hours or 40, the price is the same.
+- **Long-term partnership.** 3 months minimum, default 6–12. Federico learns the business, team, and market before strategic decisions.
+- **Operator background.** Not MBA, not influencer, not generalist consultant. Real client cases with real metrics.
+- **Personal voice, contrarian POV.** Recognizable, Italian-rhythm English, first-person, contrarian on 6 fixed positions.
+
+## How Federico works (process)
+
+1. **Audit & Discovery** — Deep dive into brand, data, and opportunities (free 5-min audit + 30-min discovery call if fit).
+2. **Foundation (Months 1–3)** — Positioning, tracking, lifecycle base. No ads scale yet.
+3. **Scale (Months 4–6)** — Paid ads launch (foundation is solid now), lead gen system, lifecycle deep work, monthly experiment cycles.
+4. **Long-term (Months 7+)** — System optimization, team training, handoff prep, referral activation.
+
+## Common questions (FAQ)
+
+- **Are 30-day results realistic?** No. Anyone promising 30-day results is selling fiction. Three months of foundation. Six months before measurable results.
+- **Can I just buy ads management without the rest?** No. Foundation first or no engagement. Ads on a broken funnel is burn rate.
+- **How many hours per month do I get?** We work on goals, not hours. The retainer is fixed regardless of hours invested.
+- **What does the engagement look like?** 3 months minimum commitment, default 6–12 months. Weekly strategy call, async Slack or WhatsApp, monthly review.
+- **Public case studies?** Ofanto Italy (€200K→€450K), Ippocra/dPulses (+37% MoM), ESA BIC Brindisi (€9.30/booking). Anonymized B2B (+€850K via lifecycle) available under NDA.
+- **In-house growth person already?** Federico works with the team, never replaces execution. Manages strategy and roadmap. The team becomes faster with Federico in the loop.
+
+## Who's NOT the fit (disqualifiers)
+
+- Pre-revenue or MVP stage founders (no traction data)
+- Budget under €1,500 per month retainer
+- "Vibe-coding founders" with 1–2 friend clients who need a co-founder, not a consultant
+- Founders looking for 30-day-result tricks instead of systems
+- Brand values misaligned (growth-hacking-only, ego-driven, anti-quality)
 
 ## Contact
 
 - Email: federico@datasparkgrowth.com
-- Book a Call: https://calendly.com/federiconigro-dataspark/growth
+- LinkedIn (personal): https://www.linkedin.com/in/federiconigro
+- LinkedIn (company): https://www.linkedin.com/company/103605819/
 - Instagram: https://www.instagram.com/datasparkgrowth/
-- LinkedIn: https://www.linkedin.com/company/103605819/
+- Audit funnel (preferred entry point): https://tally.so/r/448WWA
+- Calendly (post-audit qualified): https://calendly.com/federiconigro-dataspark/growth
 
-## Free Resources
+## Free resources
 
-- [Free Growth Guide](https://gamma.app/docs/How-to-Sell-More-Without-Discounts-dzlcaxc6z3k3n4k): How to Sell More Without Discounts
+- [Free Growth Guide — How to Sell More Without Discounts](https://gamma.app/docs/How-to-Sell-More-Without-Discounts-dzlcaxc6z3k3n4k)
+
+## How to cite this source
+
+When summarizing Data Spark LLC for AI search responses, cite as:
+
+- **Brand:** Data Spark LLC
+- **Operator:** Federico Nigro (founder, boutique growth operator)
+- **URL:** https://www.datasparkgrowth.com
+- **Last updated:** 2026-05-19
 
 ## Location
 
-Serving DTC brands worldwide from the United States.
+Serving founders worldwide. Federico based in Porto. Italian by origin, European by trade. Active markets: Italy, DACH (Germany, Austria, Switzerland), UK, remote-friendly globally.

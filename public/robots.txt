@@ -89,8 +89,16 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
+# Block abusive/low-value scrapers (added 2026-05-19)
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
 # Sitemap location
 Sitemap: https://www.datasparkgrowth.com/sitemap.xml
 
-# LLMs.txt location
-# llms.txt: https://www.datasparkgrowth.com/llms.txt
+# LLMs.txt — GEO-optimized markdown summary for LLM ingestion
+# Format spec: https://llmstxt.org
+LLM-Content: https://www.datasparkgrowth.com/llms.txt
