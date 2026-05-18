@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Head } from "vite-react-ssg";
 import { Card, CardContent } from "../../components/ui/card";
 import { ContactForm } from "../../components/ContactForm/ContactForm";
 import { AdditionalInfoSection } from "./sections/AdditionalInfoSection";
@@ -46,6 +47,30 @@ const logoImages = [
 export const ElementDefault = (): JSX.Element => {
   return (
     <div className="relative w-full bg-federiconigrowixstudiocomwhite">
+      <Head>
+        <title>
+          Data Spark LLC | Growth Marketing Partner for DTC Brands
+        </title>
+        <meta
+          name="description"
+          content="Data Spark LLC helps DTC brands scale from $200K to $1M+ with strategy, design, CRO, retention marketing, and analytics. Your complete growth system for sustainable revenue."
+        />
+        <meta
+          name="keywords"
+          content="DTC growth marketing, ecommerce growth, retention marketing, CRO, conversion optimization, brand strategy, revenue growth, Data Spark"
+        />
+        <meta
+          property="og:title"
+          content="Data Spark LLC | Growth Marketing Partner for DTC Brands"
+        />
+        <meta
+          property="og:description"
+          content="Complete growth system for DTC brands. Strategy, design, CRO, retention marketing & analytics to scale from $200K to $1M+ without burning cash on ads."
+        />
+        <meta property="og:url" content="https://www.datasparkgrowth.com/" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.datasparkgrowth.com/" />
+      </Head>
       <div className="flex flex-col w-full items-start">
         <div className="flex flex-col items-start relative w-full">
           <div className="w-full bg-federiconigrowixstudiocomwild-sand">

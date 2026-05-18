@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Head } from "vite-react-ssg";
 import { ArrowRightIcon, ChevronDown } from "lucide-react";
 import { Card, CardContent } from "../../components/ui/card";
 import { ContactForm } from "../../components/ContactForm/ContactForm";
@@ -168,48 +169,6 @@ export const ElementFounders = (): JSX.Element => {
     setIsLoaded(true);
   }, []);
 
-  // Per-route SEO: swap title + description + canonical + OG tags on mount, restore on unmount.
-  // Note: this works for users navigating + Google JS rendering. True SEO requires pre-rendering (see business/seo-and-traffic-plan.md Phase 1.1).
-  useEffect(() => {
-    const prevTitle = document.title;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const prevDesc = metaDesc?.getAttribute("content");
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    const prevOgTitle = ogTitle?.getAttribute("content");
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    const prevOgDesc = ogDesc?.getAttribute("content");
-    const ogUrl = document.querySelector('meta[property="og:url"]');
-    const prevOgUrl = ogUrl?.getAttribute("content");
-    const canonical = document.querySelector('link[rel="canonical"]');
-    const prevCanonical = canonical?.getAttribute("href");
-
-    document.title =
-      "Data Spark LLC | Boutique Growth Operator for Founders with Traction";
-    metaDesc?.setAttribute(
-      "content",
-      "Boutique growth operator for founders with traction (€30K–€500K MRR). Foundation before tactics. Full-funnel systems that run without you. No junior, no agency overhead."
-    );
-    ogTitle?.setAttribute(
-      "content",
-      "Data Spark LLC | Boutique Growth Operator for Founders"
-    );
-    ogDesc?.setAttribute(
-      "content",
-      "Helping founders escape the scaling ceiling. Foundation before tactics. Boutique senior, no junior, no agency overhead."
-    );
-    ogUrl?.setAttribute("content", "https://www.datasparkgrowth.com/founders");
-    canonical?.setAttribute("href", "https://www.datasparkgrowth.com/founders");
-
-    return () => {
-      document.title = prevTitle;
-      metaDesc?.setAttribute("content", prevDesc || "");
-      ogTitle?.setAttribute("content", prevOgTitle || "");
-      ogDesc?.setAttribute("content", prevOgDesc || "");
-      ogUrl?.setAttribute("content", prevOgUrl || "");
-      canonical?.setAttribute("href", prevCanonical || "");
-    };
-  }, []);
-
   // JSON-LD schemas — load ONLY on /founders route (FAQPage + Service)
   const faqSchema = {
     "@context": "https://schema.org",
@@ -252,6 +211,44 @@ export const ElementFounders = (): JSX.Element => {
 
   return (
     <div className="relative w-full bg-federiconigrowixstudiocomwhite">
+      <Head>
+        <title>
+          Data Spark LLC | Boutique Growth Operator for Founders with Traction
+        </title>
+        <meta
+          name="description"
+          content="Boutique growth operator for founders with traction (€30K–€500K MRR). Foundation before tactics. Full-funnel systems that run without you. No junior, no agency overhead."
+        />
+        <meta
+          name="keywords"
+          content="boutique growth consultant, growth operator, fractional CMO, B2B SaaS growth, founder growth strategy, scaling consultant, foundation-first marketing, AI growth systems"
+        />
+        <meta
+          property="og:title"
+          content="Data Spark LLC | Boutique Growth Operator for Founders"
+        />
+        <meta
+          property="og:description"
+          content="Helping founders escape the scaling ceiling. Foundation before tactics. Boutique senior, no junior, no agency overhead."
+        />
+        <meta
+          property="og:url"
+          content="https://www.datasparkgrowth.com/founders"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          name="twitter:title"
+          content="Data Spark LLC | Boutique Growth Operator for Founders"
+        />
+        <meta
+          name="twitter:description"
+          content="Helping founders escape the scaling ceiling. Foundation before tactics. Boutique senior."
+        />
+        <link
+          rel="canonical"
+          href="https://www.datasparkgrowth.com/founders"
+        />
+      </Head>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
