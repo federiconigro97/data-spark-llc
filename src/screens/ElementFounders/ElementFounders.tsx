@@ -42,28 +42,28 @@ const proofMetrics = [
 const services = [
   {
     tier: "Audit",
-    price: "Free",
-    title: "5-min audit funnel",
+    price: "Free · 5 min",
+    title: "Audit funnel",
     description:
       "Auto-qualifies fit in 5 minutes. If we're a fit, you book a discovery call. If we're not, you get the Founder Playbook and you move on with something useful.",
   },
   {
     tier: "Sprint",
-    price: "€5–10K flat",
+    price: "6–10 weeks · productized",
     title: "Foundation Sprint",
     description:
-      "6–10 weeks. Productized full-funnel install: positioning, tracking, funnel, paid ads launch, lifecycle base, analytics dashboard. Fixed scope, fixed price.",
+      "Full-funnel install: positioning, tracking, funnel, paid ads launch, lifecycle base, analytics dashboard. Fixed scope, fixed outcome. Investment discussed after the audit.",
   },
   {
     tier: "Retainer",
-    price: "€2.5–5K / month",
+    price: "Long-term partnership",
     title: "Growth Operator Retainer",
     description:
-      "Long-term partnership. Strategy, ads optimization, lifecycle, retention, lead gen. I'm the strategic head. Senior pros execute the tactical under my direction.",
+      "Long-term partnership built around the founder relationship. Strategy, ads optimization, lifecycle, retention, lead gen. Operator-led, senior team executes under the same direction.",
   },
   {
     tier: "Engines",
-    price: "€5–10K + €1–2K / month",
+    price: "Modular · managed",
     title: "Deployable Growth Engines",
     description:
       "Productized systems: Lead Gen, Lifecycle, Ads Optimization, Content. Built once, deployed per client. Add-on to retainer or standalone.",
@@ -72,9 +72,9 @@ const services = [
 
 const whyChoose = [
   {
-    title: "Boutique senior. Never junior.",
+    title: "Senior partnership, no agency overhead.",
     description:
-      "Agencies pitch you the founder and deliver a junior account. You get me, from pitch to delivery. No intermediaries.",
+      "Most agencies pitch you the founder and deliver a junior account. With us you stay close to the operator from pitch to delivery, with senior specialists executing under the same direction.",
   },
   {
     title: "Foundation before tactics.",
@@ -84,22 +84,22 @@ const whyChoose = [
   {
     title: "Goals, not hours.",
     description:
-      "Retainer fixed, scope on outcome. Whether your week is 10 strategy hours or 40, the price is the same. Incentive aligned with your result.",
+      "Engagement is fixed, scope is on outcome. Whether the work needs 10 strategy hours a week or 40, the agreement is the same. Incentive aligned with your result.",
   },
   {
     title: "Long-term partnership.",
     description:
-      "3 months minimum, default 6–12. I learn your business, your team, your market. Strategic decisions only matter inside that depth.",
+      "3 months minimum, default 6–12. We learn your business, your team, your market. Strategic decisions only matter inside that depth.",
   },
   {
-    title: "Operator background.",
+    title: "Operator-led, team-supported.",
     description:
-      "Ex marketing director, ex media buyer scaling €30–50K/mo in ads, ex content creator for Nike, Oppo, JD Sports, MyProtein. Engineering by training.",
+      "Founder background spans marketing operations, media buying, and ex content creator for Nike, Oppo, JD Sports, MyProtein. Engineering by training. Senior specialists execute the tactical under operator direction.",
   },
   {
-    title: "Personal voice. Contrarian POV.",
+    title: "Founder voice, contrarian POV.",
     description:
-      "Recognizable voice, Italian rhythm, first-person, contrarian on 6 fixed points. No corporate, no MBA, no LinkedIn platitudes.",
+      "Recognizable voice, Italian rhythm, founder-first, contrarian on 6 fixed points. No corporate, no MBA, no LinkedIn platitudes.",
   },
 ];
 
@@ -126,32 +126,32 @@ const processPhases = [
 
 const faqs = [
   {
-    question: "You're too expensive for a freelancer.",
+    question: "How does pricing work?",
     answer:
-      "I'm not a freelancer. I'm a boutique senior partner. I work on goals, not hours. Compare against agency cost (3x) plus founder time (priceless).",
+      "Engagements are goal-based, not hourly. Investment is discussed after the audit, once we know whether we're a fit and what scope makes sense for your business. We're not the cheapest option and we're not trying to be.",
   },
   {
-    question: "I just want ads, not positioning work.",
+    question: "We just want help on ads, not positioning work.",
     answer:
-      "Ads on a broken funnel is burn rate. Foundation first, or we don't work together. This is non-negotiable.",
+      "Ads on a broken funnel is burn rate. We work foundation-first, or we're probably not the right partner. This is non-negotiable.",
   },
   {
-    question: "How many hours per month do I get?",
+    question: "How many hours per month do we get?",
     answer:
-      "We work on goals, not hours. Whether your week is 10 strategy hours or 40, the output is what matters. The retainer is fixed.",
+      "We work on goals, not hours. Whether the engagement needs 10 strategy hours a week or 40, the output is what matters. The agreement is fixed.",
   },
   {
-    question: "I already have an in-house growth person.",
+    question: "We already have an in-house growth person.",
     answer:
-      "Perfect. I work with your team. I never replace execution. I manage strategy and roadmap. Your team becomes faster and clearer with me in the loop.",
+      "Perfect. We work alongside your team. We don't replace execution. We bring strategy, roadmap, and senior pattern recognition. Your team becomes faster and clearer with us in the loop.",
   },
   {
-    question: "How long until I hit €X MRR?",
+    question: "How long until we hit our growth target?",
     answer:
-      "I don't promise timelines. I promise systems. Three months of foundation. Six months before measurable results. Anyone promising 30-day results is selling fiction.",
+      "We don't promise timelines. We promise systems. Three months of foundation. Six months before measurable results. Anyone promising 30-day results is selling fiction.",
   },
   {
-    question: "Can I see public case studies?",
+    question: "Can we see public case studies?",
     answer:
       "Yes. Ofanto Italy €200K → €450K in 12 months. Ippocra / dPulses +37% MoM. ESA BIC Brindisi €9.30 per booking. An anonymized B2B +€850K through email and lifecycle, available on request under NDA.",
   },
@@ -203,8 +203,6 @@ export const ElementFounders = (): JSX.Element => {
       "@type": "Offer",
       name: s.title,
       description: s.description,
-      price: s.price,
-      priceCurrency: "EUR",
     })),
   };
 
@@ -306,7 +304,7 @@ export const ElementFounders = (): JSX.Element => {
                         transitionDelay: "400ms",
                       }}
                     >
-                      Foundation before tactics. Systems that run without you. €30K–€500K MRR. Boutique, senior, no junior.
+                      Foundation before tactics. Systems that run without you. Built for founders with traction.
                     </p>
 
                     <div
@@ -368,13 +366,13 @@ export const ElementFounders = (): JSX.Element => {
                   className="font-medium text-[#191818] text-2xl sm:text-3xl md:text-[31.5px] tracking-tight leading-tight mb-3"
                   style={{ fontFamily: "'Satoshi', Helvetica" }}
                 >
-                  The Growth Operator Founders Choose Over Agencies
+                  The Growth Partner Founders Choose Over Agencies
                 </h2>
                 <p
                   className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed"
                   style={{ fontFamily: "'Satoshi', Helvetica" }}
                 >
-                  Boutique senior partnership for founders with traction. €30K–€500K MRR or €100K–€1M ARR. 4–6 founders per year. No junior, no agency overhead.
+                  Boutique senior partnership for founders with traction. Four to six founders served per year. Operator-led, senior team executes under the same direction.
                 </p>
               </div>
             </section>
@@ -496,13 +494,13 @@ export const ElementFounders = (): JSX.Element => {
                     className="inline-block px-4 py-2 rounded-full bg-[#191818]/10 text-[#191818] text-sm font-medium tracking-wide uppercase mb-4"
                     style={{ fontFamily: "'Satoshi', Helvetica" }}
                   >
-                    Why Founders Choose Federico
+                    Why Founders Choose Us
                   </span>
                   <h2
                     className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#191818] leading-tight"
                     style={{ fontFamily: "'Satoshi', Helvetica" }}
                   >
-                    Six things I do differently
+                    Six things we do differently
                   </h2>
                 </div>
 
@@ -669,7 +667,7 @@ export const ElementFounders = (): JSX.Element => {
                       className="text-base sm:text-lg text-gray-600 leading-relaxed"
                       style={{ fontFamily: "'Satoshi', Helvetica" }}
                     >
-                      Four to six founders per year. Boutique partnership. If you have traction (€30K+ MRR or €100K+ ARR) and you're tired of trick-of-the-month, take the 5-minute audit.
+                      Four to six founders served per year. Boutique partnership. If you have traction and you're tired of trick-of-the-month, take the 5-minute audit.
                     </p>
                     <p
                       className="text-sm text-gray-500 leading-relaxed"
