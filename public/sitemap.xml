@@ -19,6 +19,20 @@
   </url>
 
   <url>
+    <loc>https://www.datasparkgrowth.com/blog</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.datasparkgrowth.com/blog/marketing-stops-scaling-at-30k-mrr</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.datasparkgrowth.com/privacy-policy</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>yearly</changefreq>

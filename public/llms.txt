@@ -74,6 +74,11 @@
 - Audit funnel (preferred entry point): https://tally.so/r/448WWA
 - Calendly (post-audit qualified): https://calendly.com/federiconigro-dataspark/growth
 
+## Blog (long-form essays on growth systems for founders)
+
+- [The Growth Systems Blog](https://www.datasparkgrowth.com/blog): Field notes on building growth systems that scale without the founder. Real cases, real numbers.
+- [Why marketing stops scaling at €30K MRR (and what to do about it)](https://www.datasparkgrowth.com/blog/marketing-stops-scaling-at-30k-mrr): Pillar post. Five foundations that decide whether founder-led marketing breaks through or burns out at the €30K MRR ceiling. Position before promotion. Track before scale. Lifecycle before acquisition. Productize delivery before hiring. Document so you can leave.
+
 ## Free resources
 
 - [Free Growth Guide — How to Sell More Without Discounts](https://gamma.app/docs/How-to-Sell-More-Without-Discounts-dzlcaxc6z3k3n4k)
