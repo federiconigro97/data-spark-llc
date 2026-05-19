@@ -8,14 +8,14 @@
     <loc>https://www.datasparkgrowth.com/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1</priority>
   </url>
 
   <url>
     <loc>https://www.datasparkgrowth.com/founders</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1</priority>
   </url>
 
   <url>
@@ -26,6 +26,13 @@
   </url>
 
   <url>
+    <loc>https://www.datasparkgrowth.com/privacy-policy</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
     <loc>https://www.datasparkgrowth.com/blog/marketing-stops-scaling-at-30k-mrr</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -33,10 +40,10 @@
   </url>
 
   <url>
-    <loc>https://www.datasparkgrowth.com/privacy-policy</loc>
+    <loc>https://www.datasparkgrowth.com/blog/the-7x-rule-retention-beats-acquisition</loc>
     <lastmod>2026-05-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
