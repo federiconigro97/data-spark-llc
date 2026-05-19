@@ -166,7 +166,8 @@ export const ElementFounders = (): JSX.Element => {
   // which baked opacity:0 into SSR HTML and could leave hero blank if JS
   // hydration was slow or partial. SSR-safe constant now.
   const isLoaded = true;
-  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  // FAQ uses native <details>/<summary> — no state needed. Click works
+  // without JS, content always present in HTML (SEO + LLM citation safe).
 
   // JSON-LD schemas — load ONLY on /founders route (FAQPage + Service)
   const faqSchema = {
@@ -608,13 +609,11 @@ export const ElementFounders = (): JSX.Element => {
 
                 <div className="flex flex-col gap-3 md:gap-4">
                   {faqs.map((f, i) => (
-                    <button
+                    <details
                       key={i}
-                      type="button"
-                      onClick={() => setOpenFaqIndex(openFaqIndex === i ? null : i)}
-                      className="text-left w-full bg-white rounded-2xl border border-black/5 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
+                      className="group bg-white rounded-2xl border border-black/5 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
                     >
-                      <div className="flex items-center justify-between p-5 sm:p-6">
+                      <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <h3
                           className="text-base sm:text-lg font-semibold text-[#191818] pr-4"
                           style={{ fontFamily: "'Satoshi', Helvetica" }}
@@ -622,22 +621,18 @@ export const ElementFounders = (): JSX.Element => {
                           {f.question}
                         </h3>
                         <ChevronDown
-                          className={`w-5 h-5 text-[#191818]/60 flex-shrink-0 transition-transform duration-300 ${
-                            openFaqIndex === i ? "rotate-180" : ""
-                          }`}
+                          className="w-5 h-5 text-[#191818]/60 flex-shrink-0 transition-transform duration-300 group-open:rotate-180"
                         />
+                      </summary>
+                      <div className="px-5 sm:px-6 pb-5 sm:pb-6">
+                        <p
+                          className="text-sm sm:text-base text-gray-600 leading-relaxed"
+                          style={{ fontFamily: "'Satoshi', Helvetica" }}
+                        >
+                          {f.answer}
+                        </p>
                       </div>
-                      {openFaqIndex === i && (
-                        <div className="px-5 sm:px-6 pb-5 sm:pb-6">
-                          <p
-                            className="text-sm sm:text-base text-gray-600 leading-relaxed"
-                            style={{ fontFamily: "'Satoshi', Helvetica" }}
-                          >
-                            {f.answer}
-                          </p>
-                        </div>
-                      )}
-                    </button>
+                    </details>
                   ))}
                 </div>
               </div>
