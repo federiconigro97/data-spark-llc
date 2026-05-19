@@ -15,27 +15,27 @@ import { NewsletterSection } from "../ElementDefault/sections/NewsletterSection"
 const proofMetrics = [
   {
     metric: "€200K → €450K",
-    description: "Ofanto Italy. 12 months. Zero ads.",
-    bg: "bg-[#fbb84b]",
-    text: "text-[#191818]",
-  },
-  {
-    metric: "+37% MoM",
-    description: "Ippocra / dPulses. One positioning pivot.",
+    description: "Ofanto Italy. Revenue in 12 months. Zero ads.",
     bg: "bg-[#3d3b8e]",
     text: "text-white",
   },
   {
-    metric: "+€850K",
-    description: "Anonymized B2B. Email + lifecycle. No ads.",
+    metric: "+37% MoM",
+    description: "Ippocra (healthtech). One positioning pivot. AI lead gen on autopilot.",
     bg: "bg-[#191818]",
     text: "text-white",
   },
   {
+    metric: "+€850K",
+    description: "Anonymized B2B. Revenue generated so far. Email + lifecycle, zero ad spend.",
+    bg: "bg-[#3d3b8e]",
+    text: "text-white",
+  },
+  {
     metric: "€9.30",
-    description: "Cost per booking. ESA BIC first cohort.",
-    bg: "bg-[#fbb84b]",
-    text: "text-[#191818]",
+    description: "ESA BIC Brindisi. Cost per booking. First cohort filled, brand new website.",
+    bg: "bg-[#191818]",
+    text: "text-white",
   },
 ];
 
@@ -411,7 +411,7 @@ export const ElementFounders = (): JSX.Element => {
                           {m.metric}
                         </div>
                         <p
-                          className="text-sm sm:text-base opacity-90 leading-relaxed"
+                          className="text-sm sm:text-base leading-relaxed"
                           style={{ fontFamily: "'Satoshi', Helvetica" }}
                         >
                           {m.description}
