@@ -28,8 +28,8 @@ export const PrivacyPolicy = (): JSX.Element => {
 
         <div className="prose prose-gray max-w-none space-y-6 text-gray-700 leading-relaxed">
           <p>
-            This Privacy Policy describes the policies of Data Spark LLC, 5830 E 2ND ST, STE 7000
-            CASPER, WY 82609, Wyoming 82609, United States of America, email:{" "}
+            This Privacy Policy describes the policies of Data Spark LLC, 5830 East 2nd Street,
+            STE 7000, Casper, WY 82609, United States of America, email:{" "}
             <a
               href="mailto:federico@datasparkgrowth.com"
               className="text-[#3d3b8e] hover:underline"
@@ -158,8 +158,8 @@ export const PrivacyPolicy = (): JSX.Element => {
               </h2>
               <p>
                 If you have any queries or concerns about the processing of your information that
-                is available with us, you may email our Grievance Officer at Data Spark LLC, 5830
-                E 2ND ST, STE 7000 CASPER, WY 82609, email:{" "}
+                is available with us, you may email our Grievance Officer at Data Spark LLC,
+                5830 East 2nd Street, STE 7000, Casper, WY 82609, email:{" "}
                 <a
                   href="mailto:federico@datasparkgrowth.com"
                   className="text-[#3d3b8e] hover:underline"

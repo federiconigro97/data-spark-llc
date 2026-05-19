@@ -1,9 +1,9 @@
 import React from "react";
 
 const footerData = {
-  address: "30 North Gould Street, Sheridan WY 82801",
+  address: "5830 East 2nd Street, STE 7000, Casper, WY 82609",
   ein: "EIN: 38-4298308",
-  copyright: "Copyright © 2024, Data Spark LLC. All right reserved.",
+  copyright: "Copyright © 2026, Data Spark LLC. All rights reserved.",
 };
 
 export const NewsletterSection = (): JSX.Element => {
