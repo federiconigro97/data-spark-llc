@@ -162,12 +162,11 @@ const faqs = [
 // ============================================================================
 
 export const ElementFounders = (): JSX.Element => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  // Hero visible by default — was previously gated by useEffect(setIsLoaded)
+  // which baked opacity:0 into SSR HTML and could leave hero blank if JS
+  // hydration was slow or partial. SSR-safe constant now.
+  const isLoaded = true;
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
 
   // JSON-LD schemas — load ONLY on /founders route (FAQPage + Service)
   const faqSchema = {

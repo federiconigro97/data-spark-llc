@@ -3,7 +3,7 @@ import { Button } from "../../../../components/ui/button";
 
 export const HeroSection = (): JSX.Element => {
   const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const element = ref.current;

@@ -1,12 +1,11 @@
 import { ArrowRightIcon } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export const CoreContentSection = (): JSX.Element => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
+  // Hero visible by default — was previously gated by useEffect(setIsLoaded)
+  // which baked opacity:0 into SSR HTML and could leave hero blank if JS
+  // hydration was slow or partial. SSR-safe constant now.
+  const isLoaded = true;
 
   return (
     <section className="relative w-full pt-16 sm:pt-20 md:pt-28 lg:pt-32 pb-10 sm:pb-12 md:pb-16 px-4 sm:px-6 md:px-12">

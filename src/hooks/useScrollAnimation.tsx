@@ -9,7 +9,10 @@ interface UseScrollAnimationOptions {
 export const useScrollAnimation = (options: UseScrollAnimationOptions = {}) => {
   const { threshold = 0.1, rootMargin = '0px', triggerOnce = true } = options;
   const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  // SSR-safe: start visible so SSG HTML has opacity:1 baked in. Scroll-fade
+  // animation is lost but page is rendered for crawlers + zero blank-flash
+  // risk if hydration is slow.
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const element = ref.current;
