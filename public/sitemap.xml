@@ -6,28 +6,28 @@
 
   <url>
     <loc>https://www.datasparkgrowth.com/</loc>
-    <lastmod>2026-05-19</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
 
   <url>
     <loc>https://www.datasparkgrowth.com/founders</loc>
-    <lastmod>2026-05-19</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
 
   <url>
     <loc>https://www.datasparkgrowth.com/blog</loc>
-    <lastmod>2026-05-19</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://www.datasparkgrowth.com/privacy-policy</loc>
-    <lastmod>2026-05-19</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -61,6 +61,13 @@
   </url>
 
   <url>
+    <loc>https://www.datasparkgrowth.com/blog/agency-vs-boutique-vs-freelancer-decision-matrix</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.datasparkgrowth.com/blog/b2b-saas-retention-benchmarks-2026</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -82,8 +89,29 @@
   </url>
 
   <url>
+    <loc>https://www.datasparkgrowth.com/blog/first-in-house-growth-hire-timing</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.datasparkgrowth.com/blog/fractional-cmo-vs-growth-consultant-vs-in-house</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.datasparkgrowth.com/blog/ga4-events-spec-template-b2b-saas-founders</loc>
     <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.datasparkgrowth.com/blog/how-to-fire-marketing-agency-cleanly</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
